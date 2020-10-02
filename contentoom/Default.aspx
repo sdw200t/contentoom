@@ -37,6 +37,9 @@
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
             </p>
         </div>
+        <div class="col-md-4">
+            <asp:DataList ID="DataList1" runat="server"></asp:DataList>
+        </div>    
     </div>
 
 </asp:Content>
