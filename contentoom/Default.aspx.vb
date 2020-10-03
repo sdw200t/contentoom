@@ -31,19 +31,19 @@ Public Class _Default
             conn.Open()
             cmd.Connection = conn
             'Для выполнения запросов типа insert, update возможно использование ExecuteNonQuery, которая возвращает количество задействованных строк
-            cmd.CommandText = "INSERT INTO `test_table` (`id`, `test_info`) VALUES (NULL, 'some text info for current id');"
+            cmd.CommandText = "INSERT INTO `GroupUsers` (`Name`) VALUES ('Петров');"
             Try
                 cmd.ExecuteNonQuery()
             Catch ex As Exception
                 'описание того, что программа должна делать в случае возникновения каких-либо непредвиденных обстоятельств
             End Try
             'для получения данных из таблиц (запросы типа select) используется reader.
-            cmd.CommandText = "SELECT * FROM `test_table`"
+            cmd.CommandText = "SELECT * FROM `GroupUsers`"
             Dim reader As MySqlDataReader
             reader = cmd.ExecuteReader()
             While reader.Read()
                 'получаем и сообщаем пользователю значения первого столбца базы данных для всех выбранных запросом строк
-                MsgBox(reader.GetValue(0))
+                MsgBox(reader.GetValue(1))
             End While
         Catch ex As Exception
             'описание действий при проблемах с подключением к БД
@@ -87,4 +87,11 @@ Public Class _Default
 
     End Sub
 
+    Protected Sub Button2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Protected Sub Button2_Click1(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
 End Class

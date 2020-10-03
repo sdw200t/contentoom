@@ -38,13 +38,6 @@
             </p>
         </div>
         <div class="col-md-4">
-            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AutoGenerateColumns="False">
-                <Columns>
-                    <asp:BoundField DataField="Имя" HeaderText="Имя" SortExpression="Имя" />
-                    <asp:BoundField DataField="Фамилия" HeaderText="Фамилия" SortExpression="Фамилия" />
-                </Columns>
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString2 %>" ProviderName="<%$ ConnectionStrings:Database1ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM [Таблица1]"></asp:SqlDataSource>
             <asp:Button ID="Button1" runat="server" Text="Button" />
             <asp:Button ID="Button2" runat="server" Text="Кнопка 2" />
         </div>    
