@@ -40,6 +40,7 @@
         <div class="col-md-4">
             <asp:Button ID="Button1" runat="server" Text="Button" />
             <asp:Button ID="Button2" runat="server" Text="Кнопка 2" />
+            <asp:Button ID="Button3" runat="server" Text="Button" />
         </div>    
     </div>
 
