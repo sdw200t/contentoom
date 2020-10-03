@@ -14,11 +14,29 @@ Option Explicit On
 Partial Public Class _Default
 
     '''<summary>
-    '''DataList1 элемент управления.
+    '''GridView1 элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents DataList1 As Global.System.Web.UI.WebControls.DataList
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''SqlDataSource1 элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Button1 элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 End Class
