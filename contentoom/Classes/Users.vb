@@ -7,7 +7,6 @@
 
     Public Function Add(ByVal Name As String)
         Dim db As DataBase
-        db.
         Return True
     End Function
 

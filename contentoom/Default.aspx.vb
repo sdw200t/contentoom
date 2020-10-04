@@ -13,6 +13,8 @@ Public Class _Default
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
+        Dim DB As New DataBase
+
         ''Создание таблицы
         'cn.Open()
         'SqlCom = New OleDb.OleDbCommand("CREATE TABLE Таблица2 (Имя TEXT (20), Фамилия TEXT (20))", cn)
@@ -25,25 +27,22 @@ Public Class _Default
         'SqlCom.ExecuteNonQuery()
         'cn.Close()
 
-        Dim conn As New MySqlConnection("Server=evolik.beget.tech;User id=evolik_db;password=T1ysfJ&0;database=evolik_db")
-        Dim cmd As New MySqlCommand
+
         Try
-            conn.Open()
-            cmd.Connection = conn
-            'Для выполнения запросов типа insert, update возможно использование ExecuteNonQuery, которая возвращает количество задействованных строк
-            cmd.CommandText = "INSERT INTO `GroupUsers` (`Name`) VALUES ('Петров');"
-            Try
-                cmd.ExecuteNonQuery()
-            Catch ex As Exception
-                'описание того, что программа должна делать в случае возникновения каких-либо непредвиденных обстоятельств
-            End Try
+            '    'Для выполнения запросов типа insert, update возможно использование ExecuteNonQuery, которая возвращает количество задействованных строк
+            '    cmd.CommandText = "INSERT INTO `GroupUsers` (`Name`) VALUES ('Петров');"
+            '    Try
+            '        cmd.ExecuteNonQuery()
+            '    Catch ex As Exception
+            '        'описание того, что программа должна делать в случае возникновения каких-либо непредвиденных обстоятельств
+            '    End Try
             'для получения данных из таблиц (запросы типа select) используется reader.
-            cmd.CommandText = "SELECT * FROM `GroupUsers`"
-            Dim reader As MySqlDataReader
-            reader = cmd.ExecuteReader()
-            While reader.Read()
+            DB.Command.CommandText = "SELECT * FROM `GroupUsers`"
+            Dim Reader As MySqlDataReader
+            Reader = DB.ExecuteSQL()
+            While Reader.Read()
                 'получаем и сообщаем пользователю значения первого столбца базы данных для всех выбранных запросом строк
-                MsgBox(reader.GetValue(1))
+                MsgBox(Reader.GetValue(1))
             End While
         Catch ex As Exception
             'описание действий при проблемах с подключением к БД
