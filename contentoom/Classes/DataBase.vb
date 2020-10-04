@@ -3,7 +3,7 @@
 Public Class DataBase
 
     Private _Connection As MySqlConnection
-    Private _Command As New MySqlCommand
+    Private _Command As MySqlCommand
     Private _Reader As MySqlDataReader
 
     Public Property Connection As MySqlConnection
@@ -33,19 +33,15 @@ Public Class DataBase
         End Set
     End Property
 
-    Public Sub DataBase()
+    Public Sub New()
         Try
             _Connection = New MySqlConnection(ConfigurationManager.ConnectionStrings("conn").ConnectionString)
+            _Command = New MySqlCommand("", _Connection)
             _Connection.Open()
             _Command.Connection = _Connection
         Catch ex As Exception
-            MsgBox("123")
+            MsgBox("При попытке подключения к базе данных приложения произошла следующая ошибка. " & ex.Message)
         End Try
     End Sub
-
-    Public Function ExecuteSQL()
-        Return _Command.ExecuteReader()
-    End Function
-
 
 End Class

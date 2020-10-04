@@ -3,6 +3,9 @@
 Public Class _Default
     Inherits Page
 
+    ' Создаем экземпляр объекта подключения к БД для всей страницы.
+    Private DB As New DataBase
+
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 
     End Sub
@@ -13,7 +16,15 @@ Public Class _Default
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Dim DB As New DataBase
+        DB.Command.CommandText = "SELECT * FROM `GroupUsers`"
+        Dim Reader As MySqlDataReader
+        Reader = DB.Command.ExecuteReader
+        While Reader.Read()
+            'получаем и сообщаем пользователю значения первого столбца базы данных для всех выбранных запросом строк
+            MsgBox(Reader.GetValue(1))
+        End While
+
+        MsgBox(DB.Connection.ConnectionTimeout)
 
         ''Создание таблицы
         'cn.Open()
@@ -28,25 +39,25 @@ Public Class _Default
         'cn.Close()
 
 
-        Try
-            '    'Для выполнения запросов типа insert, update возможно использование ExecuteNonQuery, которая возвращает количество задействованных строк
-            '    cmd.CommandText = "INSERT INTO `GroupUsers` (`Name`) VALUES ('Петров');"
-            '    Try
-            '        cmd.ExecuteNonQuery()
-            '    Catch ex As Exception
-            '        'описание того, что программа должна делать в случае возникновения каких-либо непредвиденных обстоятельств
-            '    End Try
-            'для получения данных из таблиц (запросы типа select) используется reader.
-            DB.Command.CommandText = "SELECT * FROM `GroupUsers`"
-            Dim Reader As MySqlDataReader
-            Reader = DB.ExecuteSQL()
-            While Reader.Read()
-                'получаем и сообщаем пользователю значения первого столбца базы данных для всех выбранных запросом строк
-                MsgBox(Reader.GetValue(1))
-            End While
-        Catch ex As Exception
-            'описание действий при проблемах с подключением к БД
-        End Try
+        'Try
+        '    '    'Для выполнения запросов типа insert, update возможно использование ExecuteNonQuery, которая возвращает количество задействованных строк
+        '    '    cmd.CommandText = "INSERT INTO `GroupUsers` (`Name`) VALUES ('Петров');"
+        '    '    Try
+        '    '        cmd.ExecuteNonQuery()
+        '    '    Catch ex As Exception
+        '    '        'описание того, что программа должна делать в случае возникновения каких-либо непредвиденных обстоятельств
+        '    '    End Try
+        '    'для получения данных из таблиц (запросы типа select) используется reader.
+        '    DB.Command.CommandText = "SELECT * FROM `GroupUsers`"
+        '    Dim Reader As MySqlDataReader
+        '    Reader = DB.ExecuteSQL()
+        '    While Reader.Read()
+        '        'получаем и сообщаем пользователю значения первого столбца базы данных для всех выбранных запросом строк
+        '        MsgBox(Reader.GetValue(1))
+        '    End While
+        'Catch ex As Exception
+        '    'описание действий при проблемах с подключением к БД
+        'End Try
 
 
         'Dim Number As String = TextBox1.Text
