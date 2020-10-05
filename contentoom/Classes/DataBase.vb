@@ -36,12 +36,23 @@ Public Class DataBase
     Public Sub New()
         Try
             _Connection = New MySqlConnection(ConfigurationManager.ConnectionStrings("conn").ConnectionString)
-            _Command = New MySqlCommand("", _Connection)
+            _Command = New MySqlCommand("", _Connection) 'зачем указывать _Connection 2 раза ?
             _Connection.Open()
-            _Command.Connection = _Connection
+            _Command.Connection = _Connection 'зачем указывать _Connection 2 раза ?
         Catch ex As Exception
             MsgBox("При попытке подключения к базе данных приложения произошла следующая ошибка. " & ex.Message)
         End Try
     End Sub
+
+    Public Function AddUser(ByRef User As Users)
+        Try
+            _Command.CommandText = User.QueryInto
+            _Command.ExecuteNonQuery()
+        Catch ex As Exception
+            MsgBox("При попытке регистарции пользователя в базе данных приложения произошла следующая ошибка. " & ex.Message)
+            Return False
+        End Try
+        Return True
+    End Function
 
 End Class
