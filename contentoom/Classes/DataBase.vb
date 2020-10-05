@@ -36,9 +36,9 @@ Public Class DataBase
     Public Sub New()
         Try
             _Connection = New MySqlConnection(ConfigurationManager.ConnectionStrings("conn").ConnectionString)
-            _Command = New MySqlCommand("", _Connection) 'зачем указывать _Connection 2 раза ?
+            _Command = New MySqlCommand
             _Connection.Open()
-            _Command.Connection = _Connection 'зачем указывать _Connection 2 раза ?
+            _Command.Connection = _Connection
         Catch ex As Exception
             MsgBox("При попытке подключения к базе данных приложения произошла следующая ошибка. " & ex.Message)
         End Try
