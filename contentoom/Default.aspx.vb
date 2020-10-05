@@ -5,13 +5,14 @@ Public Class _Default
     Inherits Page
 
     ' Создаем экземпляр объекта подключения к БД для всей страницы.
-    Private DB As New DataBase
+    Private DB As DataBase
     Private log As New LogTxt
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         log.SaveLog("Чтение пользователей в базе данных")
 
+        DB = New DataBase
         DB.Command.CommandText = "SELECT * FROM `GroupUsers`"
         Dim Reader As MySqlDataReader
         Reader = DB.Command.ExecuteReader
