@@ -6,11 +6,7 @@ Public Class _Default
 
     ' Создаем экземпляр объекта подключения к БД для всей страницы.
     Private DB As New DataBase
-    Dim log As New LogTxt
-
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
-
-    End Sub
+    Private log As New LogTxt
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 

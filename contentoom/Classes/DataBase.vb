@@ -5,6 +5,7 @@ Public Class DataBase
     Private _Connection As MySqlConnection
     Private _Command As MySqlCommand
     Private _Reader As MySqlDataReader
+    Private log As New LogTxt
 
     Public Property Connection As MySqlConnection
         Get
@@ -34,6 +35,10 @@ Public Class DataBase
     End Property
 
     Public Sub New()
+        Log.SaveLog("**************************************")
+        Log.SaveLog("Class DataBase")
+        Log.SaveLog("Конструктор")
+        Log.SaveLog("--------------------------------------")
         Try
             _Connection = New MySqlConnection(ConfigurationManager.ConnectionStrings("conn").ConnectionString)
             _Command = New MySqlCommand
