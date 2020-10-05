@@ -1,21 +1,28 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports Microsoft.Extensions.Logging
+Imports System.Web.SessionState.SessionStateMode
 
 Public Class _Default
     Inherits Page
 
     ' Создаем экземпляр объекта подключения к БД для всей страницы.
-    Private DB As DataBase
     Private log As New LogTxt
+
+    Public Sub New()
+        Session("DB") = Nothing
+    End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         log.SaveLog("Чтение пользователей в базе данных")
 
-        DB = New DataBase
-        DB.Command.CommandText = "SELECT * FROM `GroupUsers`"
+        If Session("DB") Is Nothing Then
+            Session("DB") = New DataBase
+        End If
+
+        Session("DB").Command.CommandText = "SELECT * FROM `GroupUsers`"
         Dim Reader As MySqlDataReader
-        Reader = DB.Command.ExecuteReader
+        Reader = Session("DB").Command.ExecuteReader
         ListBox1.Items.Clear()
 
         While Reader.Read()
@@ -23,7 +30,7 @@ Public Class _Default
             ListBox1.Items.Add(Reader.GetValue(1))
         End While
 
-        lblTimeOut.Text = "TimeOut: " + DB.Connection.ConnectionTimeout.ToString
+        lblTimeOut.Text = "TimeOut: " + Session("DB").Connection.ConnectionTimeout.ToString
 
     End Sub
 
@@ -35,7 +42,10 @@ Public Class _Default
             .UserName = tbUserName.Text
         }
 
-        DB.AddUser(User)
+        If Session("DB") Is Nothing Then
+            Session("DB") = New DataBase
+        End If
+        Session("DB").AddUser(User)
 
     End Sub
 End Class
