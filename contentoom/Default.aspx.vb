@@ -8,11 +8,8 @@ Public Class _Default
     ' Создаем экземпляр объекта подключения к БД для всей страницы.
     Private log As New LogTxt
 
-    Public Sub New()
-        Session("DB") = Nothing
-    End Sub
-
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MsgBox(Session("StringMessage"))
 
         log.SaveLog("Чтение пользователей в базе данных")
 
@@ -48,4 +45,5 @@ Public Class _Default
         Session("DB").AddUser(User)
 
     End Sub
+
 End Class

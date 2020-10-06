@@ -58,6 +58,11 @@ Public Class DataBase
             Return False
         End Try
         Return True
+
+        RaiseEvent MyEvent()
+
     End Function
+
+    Sub Event MyEvent()
 
 End Class
