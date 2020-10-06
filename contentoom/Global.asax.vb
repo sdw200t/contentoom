@@ -12,7 +12,7 @@ Public Class Global_asax
 
     Sub Session_Start(sender As Object, e As EventArgs)
         ' Объявление и инициализация переменных сессии.
-        Session("DB") = Nothing ' Подключение к БД.
+        'Session("DB") = Nothing ' Подключение к БД.
         Session("UserName") = "" ' Имя пользователя.
 
         Session("StringMessage") = "Переменная сессии инициализирована"

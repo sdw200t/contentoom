@@ -2,10 +2,21 @@
 
 Public Class DataBase
 
+    Private log As New LogTxt
+
     Private _Connection As MySqlConnection
     Private _Command As MySqlCommand
     Private _Reader As MySqlDataReader
-    Private log As New LogTxt
+    Private _CommandText As String
+
+    Public Property CommandText As String
+        Get
+            Return _Command.CommandText
+        End Get
+        Set
+            _Command.CommandText = Value
+        End Set
+    End Property
 
     Public Property Connection As MySqlConnection
         Get
@@ -49,20 +60,35 @@ Public Class DataBase
         End Try
     End Sub
 
-    Public Function AddUser(ByRef User As Users)
+    'Public Function AddUser(ByRef User As Users)
+    '    Try
+    '        _Command.CommandText = User.QueryInto
+    '        _Command.ExecuteNonQuery()
+    '    Catch ex As Exception
+    '        MsgBox("При попытке регистарции пользователя в базе данных приложения произошла следующая ошибка. " & ex.Message)
+    '        Return False
+    '    End Try
+    '    Return True
+    'End Function
+
+    Public Function ExecuteNonQuery()
         Try
-            _Command.CommandText = User.QueryInto
             _Command.ExecuteNonQuery()
         Catch ex As Exception
-            MsgBox("При попытке регистарции пользователя в базе данных приложения произошла следующая ошибка. " & ex.Message)
+            MsgBox("При попытке выполнить команду произошла следующая ошибка. " & ex.Message)
             Return False
         End Try
         Return True
-
-        RaiseEvent MyEvent()
-
     End Function
 
-    Sub Event MyEvent()
+    Public Function ExecuteReader() As MySqlDataReader
+        Try
+            Return _Command.ExecuteReader()
+        Catch ex As Exception
+            MsgBox("При попытке выполнить команду произошла следующая ошибка. " & ex.Message)
+        End Try
+        Return Nothing
+
+    End Function
 
 End Class
