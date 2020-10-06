@@ -1,7 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
-Imports Microsoft.Extensions.Logging
-Imports System.Web.SessionState.SessionStateMode
-
+﻿
 Public Class _Default
     Inherits Page
 
@@ -12,11 +9,11 @@ Public Class _Default
 
         log.SaveLog("Чтение пользователей в базе данных")
 
-        Dim DB = New DataBase
+        Dim DB = New DataBase With {
+            .CommandText = "SELECT * FROM `GroupUsers`"
+        }
 
-        DB.CommandText = "SELECT * FROM `GroupUsers`"
-        Dim Reader As MySqlDataReader
-        Reader = DB.ExecuteReader()
+        Dim Reader = DB.ExecuteReader()
         ListBox1.Items.Clear()
 
         While Reader.Read()
@@ -36,9 +33,9 @@ Public Class _Default
             .UserName = tbUserName.Text
         }
 
-        Dim DB = New DataBase
-
-        DB.CommandText = User.QueryInto
+        Dim DB = New DataBase With {
+            .CommandText = User.QueryInto
+        }
         DB.ExecuteNonQuery()
 
     End Sub
