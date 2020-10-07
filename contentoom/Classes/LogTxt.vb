@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-Imports System.Net.Mime.MediaTypeNames
 
 Public Class LogTxt
     Public Sub SaveLog(ByVal Text As String)

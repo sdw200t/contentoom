@@ -15,35 +15,65 @@
         </div>
         <div class="col-md-4">
             &nbsp;<br />
-            <asp:Login ID="UserLogin" runat="server">
-            </asp:Login>
+            <asp:Table ID="tEnterUser" runat="server" Height="143px" Width="335px">
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server"> <asp:Label ID="lblLogin" runat="server" Text="Логин"></asp:Label>
+</asp:TableCell>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbLogin" runat="server"></asp:TextBox>
+</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server"> <asp:Label ID="lblPass" runat="server" Text="Пароль"></asp:Label>
+</asp:TableCell>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPass" runat="server"></asp:TextBox>
+</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Button ID="btnEnter" runat="server" Text="Войти" /></asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
             <br />
             <asp:LinkButton ID="lbRegistration" runat="server">Регистрация</asp:LinkButton>
             <br />
-            <asp:CreateUserWizard ID="CreateUserWizard" runat="server">
-                <WizardSteps>
-                    <asp:CreateUserWizardStep runat="server" />
-                    <asp:CompleteWizardStep runat="server" >
-                        <ContentTemplate>
-                            <table>
-                                <tr>
-                                    <td align="center" colspan="2">Завершить</td>
-                                </tr>
-                                <tr>
-                                    <td>Ваша учетная запись создана.</td>
-                                </tr>
-                                <tr>
-                                    <td align="right" colspan="2">
-                                        <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" Text="Продолжить" ValidationGroup="CreateUserWizard" />
-                                    </td>
-                                </tr>
-                            </table>
-                        </ContentTemplate>
-                    </asp:CompleteWizardStep>
-                </WizardSteps>
-            </asp:CreateUserWizard>
+            <br />
+            <asp:Table ID="tNewUser" runat="server" Height="143px" Width="335px">
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server"> <asp:Label ID="lblLoginNew" runat="server" Text="Логин"></asp:Label>
+</asp:TableCell>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbLoginNew" runat="server"></asp:TextBox>
+</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server"> <asp:Label ID="lblPassNew" runat="server" Text="Пароль"></asp:Label>
+</asp:TableCell>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPassNew" runat="server"></asp:TextBox>
+</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server"> <asp:Label ID="lblPassRep" runat="server" Text="Повторить пароль"></asp:Label>
+</asp:TableCell>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPassRep" runat="server"></asp:TextBox>
+</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server"> <asp:Label ID="lblName" runat="server" Text="Имя"></asp:Label>
+</asp:TableCell>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbName" runat="server"></asp:TextBox>
+</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server"> <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
+</asp:TableCell>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
+</asp:TableCell>
+                </asp:TableRow>                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Button ID="btnReg" runat="server" Text="Зарегистрироваться" /></asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+            <br />
             <asp:LinkButton ID="lbEnter" runat="server">Вход</asp:LinkButton>
         </div>    
     </div>
-
-</asp:Content>
+    </asp:Content>

@@ -8,8 +8,8 @@ Public Class GroupUsers
     Public Name As String
     Public Description As String
 
-    Public Function QueryInto() As String
-        Return $"INSERT INTO `Users` (`Code,Name,Description`) VALUES ('{Code},{Name},{Description});"
-    End Function
+    'Public Function QueryInto() As String
+    '    Return $"INSERT INTO `Users` (`Code,Name,Description`) VALUES ('{Code}','{Name}','{Description}');"
+    'End Function
 
 End Class
