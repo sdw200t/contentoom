@@ -4,7 +4,7 @@ Public Class DataBase
 
     Private log As New LogTxt
 
-    Private _Connection As MySqlConnection
+    'Private _Connection As MySqlConnection
     Private _Command As MySqlCommand
 
     Public Property CommandText As String
@@ -22,10 +22,10 @@ Public Class DataBase
         log.SaveLog("Конструктор")
         log.SaveLog("--------------------------------------")
         Try
-            _Connection = New MySqlConnection(ConfigurationManager.ConnectionStrings("conn").ConnectionString)
+            Dim Connection = New MySqlConnection(ConfigurationManager.ConnectionStrings("conn").ConnectionString)
+            Connection.Open()
             _Command = New MySqlCommand
-            _Connection.Open()
-            _Command.Connection = _Connection
+            _Command.Connection = Connection
         Catch ex As Exception
             MsgBox("При попытке подключения к базе данных приложения произошла следующая ошибка. " & ex.Message)
         End Try

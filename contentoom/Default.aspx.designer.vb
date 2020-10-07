@@ -14,56 +14,74 @@ Option Explicit On
 Partial Public Class _Default
 
     '''<summary>
-    '''lblTimeOut элемент управления.
+    '''btnReadUsers элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents lblTimeOut As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents btnReadUsers As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''LblUserName элемент управления.
+    '''dlUsers элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents LblUserName As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents dlUsers As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''tbUserName элемент управления.
+    '''btnReadGroup элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents tbUserName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents btnReadGroup As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''btnRegUser элемент управления.
+    '''dlGroup элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents btnRegUser As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents dlGroup As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''ListBox1 элемент управления.
+    '''UserLogin элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents ListBox1 As Global.System.Web.UI.WebControls.ListBox
+    Protected WithEvents UserLogin As Global.System.Web.UI.WebControls.Login
 
     '''<summary>
-    '''Button1 элемент управления.
+    '''lbRegistration элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lbRegistration As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''CreateUserWizard элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents CreateUserWizard As Global.System.Web.UI.WebControls.CreateUserWizard
+
+    '''<summary>
+    '''lbEnter элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents lbEnter As Global.System.Web.UI.WebControls.LinkButton
 End Class

@@ -1,13 +1,21 @@
-﻿Public Class Users
+﻿'IdUser
+'IdGroupUsers
+'Name
+'Login
+'Description
+Public Class Users
 
-    Public UserName As String
-    Public UserLogin As String
-    Public UserEMail As String
-    Public UserPassword As String
-    'Public ReadOnly TableName As String = "GroupUsers"
+    Public IdGroupUsers As Integer
+    Public Name As String
+    Public Login As String
+    Public Password As String
+    Public Description As String
 
     Public Function QueryInto() As String
-        Return "INSERT INTO `GroupUsers` (`Name`) VALUES ('" + UserName + "');"
+        Return $"INSERT INTO `Users` (`IdGroupUsers,Name,Login,Description`) VALUES ('{IdGroupUsers},{Name},{Login},{Description});"
     End Function
 
+    Public Function QuerySelect() As String
+        Return $"SELECT Login FROM Users WHERE Login={Login};"
+    End Function
 End Class

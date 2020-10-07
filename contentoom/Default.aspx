@@ -5,20 +5,44 @@
 
     <div class="row">
         <div class="col-md-4">
+            <asp:Button ID="btnReadUsers" runat="server" Text="Прочитать пользователей" />
+            &nbsp;<asp:DropDownList ID="dlUsers" runat="server" Width="199px"> 
+            </asp:DropDownList>
+            <br />
+            <asp:Button ID="btnReadGroup" runat="server" Text="Прочитать группы пользователей" />
+            &nbsp;<asp:DropDownList ID="dlGroup" runat="server" Width="184px">
+            </asp:DropDownList>
         </div>
         <div class="col-md-4">
-            <asp:Label ID="lblTimeOut" runat="server" Text="TimeOut"></asp:Label>
+            &nbsp;<br />
+            <asp:Login ID="UserLogin" runat="server">
+            </asp:Login>
             <br />
-            <asp:Label ID="LblUserName" runat="server" Text="Имя пользователя"></asp:Label>
-            <asp:TextBox ID="tbUserName" runat="server"></asp:TextBox>
+            <asp:LinkButton ID="lbRegistration" runat="server">Регистрация</asp:LinkButton>
             <br />
-            <asp:Button ID="btnRegUser" runat="server" Text="Зарегистрировать пользователя" />
-            <br />
-            <br />
-            <asp:ListBox ID="ListBox1" runat="server" Width="354px"></asp:ListBox>
-            <br />
-            <br />
-            <asp:Button ID="Button1" runat="server" Text="Прочитать список пользователей" />
+            <asp:CreateUserWizard ID="CreateUserWizard" runat="server">
+                <WizardSteps>
+                    <asp:CreateUserWizardStep runat="server" />
+                    <asp:CompleteWizardStep runat="server" >
+                        <ContentTemplate>
+                            <table>
+                                <tr>
+                                    <td align="center" colspan="2">Завершить</td>
+                                </tr>
+                                <tr>
+                                    <td>Ваша учетная запись создана.</td>
+                                </tr>
+                                <tr>
+                                    <td align="right" colspan="2">
+                                        <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" Text="Продолжить" ValidationGroup="CreateUserWizard" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </ContentTemplate>
+                    </asp:CompleteWizardStep>
+                </WizardSteps>
+            </asp:CreateUserWizard>
+            <asp:LinkButton ID="lbEnter" runat="server">Вход</asp:LinkButton>
         </div>    
     </div>
 
