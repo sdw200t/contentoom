@@ -337,6 +337,8 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Classes\LogTxt.vb" />
+    <Compile Include="Classes\MailSender.vb" />
+    <Compile Include="Classes\RegexUtilities.vb" />
     <Compile Include="Contact.aspx.designer.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>

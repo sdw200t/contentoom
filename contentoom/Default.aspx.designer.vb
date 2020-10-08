@@ -50,6 +50,15 @@ Partial Public Class _Default
     Protected WithEvents dlGroup As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''Button1 элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''tEnterUser элемент управления.
     '''</summary>
     '''<remarks>
@@ -192,24 +201,6 @@ Partial Public Class _Default
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
     Protected WithEvents tbName As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''lblEmail элемент управления.
-    '''</summary>
-    '''<remarks>
-    '''Автоматически создаваемое поле.
-    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-    '''</remarks>
-    Protected WithEvents lblEmail As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''tbEmail элемент управления.
-    '''</summary>
-    '''<remarks>
-    '''Автоматически создаваемое поле.
-    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-    '''</remarks>
-    Protected WithEvents tbEmail As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''btnReg элемент управления.

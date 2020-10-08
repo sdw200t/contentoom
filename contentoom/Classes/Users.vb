@@ -12,7 +12,7 @@ Public Class Users
     Public Description As String
 
     Public Function QueryInto() As String
-        Return $"INSERT INTO `Users` (`IdGroupUsers,Name,Login,Description`) VALUES ({IdGroupUsers},'{Name}','{Login}','{Description}');"
+        Return $"INSERT INTO Users (IdGroupUsers,Name,Login,Password,Description) VALUES ({IdGroupUsers},'{Name}','{Login}','{Password}','{Description}');"
     End Function
 
     Public Function QuerySelect() As String
