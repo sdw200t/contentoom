@@ -1,10 +1,6 @@
 ﻿Public Class Registration
     Inherits System.Web.UI.Page
 
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
-
     Protected Sub btnReg_Click(sender As Object, e As EventArgs) Handles btnReg.Click
 
         If Not RegexUtilities.IsValidEmail(tbLoginNew.Text) Then
@@ -29,21 +25,18 @@
 
         Dim DB = New DataBase
 
+        ' запроск к базе с проверкой существования пользователя
         DB.CommandText = User.QuerySelect
-
         Dim Reader = DB.ExecuteReader()
         If Reader.Read Then
             MsgBox("Пользователь с таким e-mail адресом уже зарегистрирован")
             Return
         End If
+        Reader.Close()
 
-        DB = Nothing
-        DB = New DataBase
-
+        ' отправка команды создания пользователя
         DB.CommandText = User.QueryInto
-
         Dim rez = DB.ExecuteNonQuery
-
         If rez Then
             MailSender.SendEmail(User.Login, User.CodeRegistration)
             pCode.Visible = True
@@ -54,7 +47,7 @@
     End Sub
 
     Protected Sub lbEnter_Click(sender As Object, e As EventArgs) Handles lbEnter.Click
-        Server.Transfer("Login.aspx")
+        Response.Redirect("Login.aspx")
     End Sub
 
     Protected Sub btnCode_Click(sender As Object, e As EventArgs) Handles btnCode.Click
@@ -66,6 +59,7 @@
         If Reader.Read Then
             MsgBox("Код подтвержден")
         End If
+        Reader.Close()
 
     End Sub
 End Class

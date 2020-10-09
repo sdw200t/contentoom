@@ -109,10 +109,11 @@ Public Class _Default
 
         Dim Reader = DB.ExecuteReader()
         If Reader.Read Then
-            Server.Transfer("UserForm.aspx")
+            Response.Redirect("UserForm.aspx")
         Else
             MsgBox("Не удалось авторизоваться")
         End If
+        Reader.Close()
 
     End Sub
 
@@ -121,12 +122,10 @@ Public Class _Default
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Server.Transfer("Registration.aspx")
-
+        Response.Redirect("Registration.aspx")
     End Sub
 
     Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Server.Transfer("Login.aspx")
-
+        Response.Redirect("Login.aspx")
     End Sub
 End Class

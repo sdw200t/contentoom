@@ -1,10 +1,6 @@
 ﻿Public Class Login
     Inherits System.Web.UI.Page
 
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
-
     Protected Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
 
         If Not RegexUtilities.IsValidEmail(tbLogin.Text) Then
@@ -23,15 +19,16 @@
 
         Dim Reader = DB.ExecuteReader()
         If Reader.Read Then
-            Server.Transfer("Default.aspx", True)
+            Response.Redirect("Default.aspx")
         Else
             MsgBox("Не удалось авторизоваться")
         End If
+        Reader.Close()
 
     End Sub
 
     Protected Sub lbRegistration_Click(sender As Object, e As EventArgs) Handles lbRegistration.Click
-        Server.Transfer("Registration.aspx")
+        Response.Redirect("Registration.aspx")
     End Sub
 
 End Class
