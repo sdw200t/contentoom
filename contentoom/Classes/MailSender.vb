@@ -14,10 +14,10 @@ Public Class MailSender
 
             e_mail = New MailMessage()
             e_mail.From = New MailAddress("info@innlook.ru")
-            e_mail.To.Add("mom70@bk.ru")
+            e_mail.To.Add(AdressTo)
             e_mail.Subject = "Тестовая отправка"
-            e_mail.IsBodyHtml = False
-            e_mail.Body = "Вы получили это письмо потому чт выиграли 1 млн долларов."
+            e_mail.IsBodyHtml = True
+            e_mail.Body = "<h2>Письмо-тест работы smtp-клиента</h2>"
             Smtp_Server.Send(e_mail)
             MsgBox("Mail Sent")
 

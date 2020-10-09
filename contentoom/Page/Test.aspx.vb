@@ -60,6 +60,11 @@ Public Class _Default
             Return
         End If
 
+        If Not tbPassNew.Text = tbPassRep.Text Then
+            MsgBox("Пароли не совпадают")
+            Return
+        End If
+
         Dim rnd = New Random
 
         Dim User = New Users With {
@@ -67,7 +72,7 @@ Public Class _Default
                 .Name = tbName.Text,
                 .Login = tbLoginNew.Text,
                 .Password = tbPassNew.Text,
-                .Description = rnd.Next(1000, 10000)
+                .CodeRegistration = rnd.Next(1000, 10000)
             }
 
         Dim DB = New DataBase
@@ -113,5 +118,15 @@ Public Class _Default
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MailSender.SendEmail(tbLogin.Text)
+    End Sub
+
+    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Server.Transfer("Registration.aspx", True)
+
+    End Sub
+
+    Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Server.Transfer("Login.aspx", True)
+
     End Sub
 End Class

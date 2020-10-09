@@ -1,5 +1,4 @@
 ﻿Imports System.Web.Optimization
-Imports MySql.Data.MySqlClient
 
 Public Class Global_asax
     Inherits HttpApplication

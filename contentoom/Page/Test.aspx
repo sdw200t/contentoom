@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="contentoom._Default" EnableSessionState="True" %>
+﻿<%@ Page Title="Home Page" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Test.aspx.vb" Inherits="contentoom._Default" EnableSessionState="True" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -22,6 +22,10 @@
 <br />
 <asp:Button ID="btnSubmit" Text="Submit" runat="server" />--%>
             <br />
+            <asp:Button ID="Button2" runat="server" Text="ОткрытьСтраницуРегистарции" />
+            <asp:Button ID="Button3" runat="server" Text="ОткрытьСтраницуВхода" />
+            <br />
+            <br />
             <asp:Button ID="Button1" runat="server" Text="отправить письмо" />
             <br />
 
@@ -37,7 +41,7 @@
                 <asp:TableRow runat="server">
                     <asp:TableCell runat="server"> <asp:Label ID="lblPass" runat="server" Text="Пароль"></asp:Label>
 </asp:TableCell>
-                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPass" runat="server"></asp:TextBox>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPass" runat="server" TextMode="Password"></asp:TextBox>
 </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
@@ -56,15 +60,15 @@
 </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
-                    <asp:TableCell runat="server"> <asp:Label ID="lblPassNew" runat="server" Text="Пароль"></asp:Label>
+                    <asp:TableCell runat="server"> <asp:Label ID="lblPassNew" runat="server" Text="Пароль" ></asp:Label>
 </asp:TableCell>
-                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPassNew" runat="server"></asp:TextBox>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPassNew" runat="server" TextMode="Password"></asp:TextBox>
 </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
                     <asp:TableCell runat="server"> <asp:Label ID="lblPassRep" runat="server" Text="Повторить пароль"></asp:Label>
 </asp:TableCell>
-                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPassRep" runat="server"></asp:TextBox>
+                    <asp:TableCell runat="server"> <asp:TextBox ID="tbPassRep" runat="server" TextMode="Password"></asp:TextBox>
 </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
