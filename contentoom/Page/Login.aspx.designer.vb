@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class WebForm2
 
     '''<summary>
-    '''tEnterUser элемент управления.
-    '''</summary>
-    '''<remarks>
-    '''Автоматически создаваемое поле.
-    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-    '''</remarks>
-    Protected WithEvents tEnterUser As Global.System.Web.UI.WebControls.Table
-
-    '''<summary>
     '''lblLogin элемент управления.
     '''</summary>
     '''<remarks>

@@ -29,14 +29,22 @@
 
         Dim DB = New DataBase
 
-        If Not DB Is Nothing Then
-            DB.CommandText = User.QueryInto
+        DB.CommandText = User.QuerySelect
 
-            Dim rez = DB.ExecuteNonQuery
-            If rez Then
-            Else
-                MsgBox("Не удалось зарегистрироваться")
-            End If
+        Dim Reader = DB.ExecuteReader()
+        If Reader.Read Then
+            MsgBox("Пользователь с таким e-mail адресом уже зарегистрирован")
+            Return
+        End If
+
+        DB.CommandText = User.QueryInto
+
+        Dim rez = DB.ExecuteNonQuery
+
+        If rez Then
+            MailSender.SendEmail(User.Login, User.CodeRegistration)
+        Else
+            MsgBox("Не удалось зарегистрироваться")
         End If
 
     End Sub

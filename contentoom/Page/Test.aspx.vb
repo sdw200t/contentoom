@@ -37,7 +37,7 @@ Public Class _Default
         Dim Reader = DB.ExecuteReader()
         dlUsers.Items.Clear()
         While Reader.Read()
-            dlUsers.Items.Add(Reader.GetValue(1))
+            dlUsers.Items.Add(Reader.GetValue(3))
         End While
     End Sub
 
@@ -117,7 +117,7 @@ Public Class _Default
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MailSender.SendEmail(tbLogin.Text)
+        MailSender.SendEmail(tbLogin.Text, "")
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

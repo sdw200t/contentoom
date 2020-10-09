@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class Registration
 
     '''<summary>
-    '''tNewUser элемент управления.
-    '''</summary>
-    '''<remarks>
-    '''Автоматически создаваемое поле.
-    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-    '''</remarks>
-    Protected WithEvents tNewUser As Global.System.Web.UI.WebControls.Table
-
-    '''<summary>
     '''lblLoginNew элемент управления.
     '''</summary>
     '''<remarks>
