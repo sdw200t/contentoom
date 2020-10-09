@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Registration.aspx.vb" Inherits="contentoom.Registration" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="Registration" Language="vb" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Registration.aspx.vb" Inherits="contentoom.Registration" %>
 
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class ="Table">
         <div class="row">
@@ -35,6 +35,11 @@
        </div>
     </div>
 
+    <asp:Panel ID="pCode" runat="server" Visible="False">
+        <asp:Label ID="lblCode" runat="server" Text="Код подтверждения"></asp:Label>
+        <asp:TextBox ID="tbCode" runat="server"></asp:TextBox>
+        <asp:Button ID="btnCode" runat="server" Text="Подтвердить" />
+   </asp:Panel>
 
 </asp:Content>
 

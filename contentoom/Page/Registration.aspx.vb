@@ -37,12 +37,16 @@
             Return
         End If
 
+        DB = Nothing
+        DB = New DataBase
+
         DB.CommandText = User.QueryInto
 
         Dim rez = DB.ExecuteNonQuery
 
         If rez Then
             MailSender.SendEmail(User.Login, User.CodeRegistration)
+            pCode.Visible = True
         Else
             MsgBox("Не удалось зарегистрироваться")
         End If
@@ -50,6 +54,18 @@
     End Sub
 
     Protected Sub lbEnter_Click(sender As Object, e As EventArgs) Handles lbEnter.Click
-        Server.Transfer("Login.aspx", True)
+        Server.Transfer("Login.aspx")
+    End Sub
+
+    Protected Sub btnCode_Click(sender As Object, e As EventArgs) Handles btnCode.Click
+        Dim DB = New DataBase
+
+        DB.CommandText = Users.QuerySelectCode(tbCode.Text)
+
+        Dim Reader = DB.ExecuteReader()
+        If Reader.Read Then
+            MsgBox("Код подтвержден")
+        End If
+
     End Sub
 End Class

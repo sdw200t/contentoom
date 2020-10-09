@@ -19,4 +19,9 @@ Public Class Users
     Public Function QuerySelect() As String
         Return $"SELECT Login FROM Users WHERE Login='{Login}';"
     End Function
+
+    Public Shared Function QuerySelectCode(Code As Integer) As String
+        Return $"SELECT CodeRegistration FROM Users WHERE CodeRegistration={Code};"
+    End Function
+
 End Class

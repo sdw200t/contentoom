@@ -102,4 +102,40 @@ Partial Public Class Registration
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
     Protected WithEvents lbEnter As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''pCode элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents pCode As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''lblCode элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents lblCode As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''tbCode элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents tbCode As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnCode элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents btnCode As Global.System.Web.UI.WebControls.Button
 End Class
