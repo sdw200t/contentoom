@@ -62,4 +62,12 @@
         Reader.Close()
 
     End Sub
+
+    Protected Sub btnNewRecordStoredProcedure_Click1(sender As Object, e As EventArgs) Handles btnNewRecordStoredProcedure.Click
+        Dim IDNewAudioRelease As Integer
+        Dim DB As New DataBase
+        If DB.Execute_SP_AudioRelease_Insert(IDNewAudioRelease) Then
+            MsgBox(IDNewAudioRelease)
+        End If
+    End Sub
 End Class

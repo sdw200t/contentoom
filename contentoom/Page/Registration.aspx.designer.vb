@@ -95,6 +95,15 @@ Partial Public Class Registration
     Protected WithEvents btnReg As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''btnNewRecordStoredProcedure элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents btnNewRecordStoredProcedure As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''lbEnter элемент управления.
     '''</summary>
     '''<remarks>

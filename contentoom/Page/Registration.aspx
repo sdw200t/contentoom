@@ -29,6 +29,7 @@
        </div>
        <div class="row">
             <asp:Button ID="btnReg" runat="server" Text="Зарегистрироваться" />
+            <asp:Button ID="btnNewRecordStoredProcedure" runat="server" Text="Добавление новой записи с помощью хранимой процедуры" />
        </div>
        <div class="row">
             <asp:LinkButton ID="lbEnter" runat="server">Вход</asp:LinkButton>
@@ -39,6 +40,8 @@
         <asp:Label ID="lblCode" runat="server" Text="Код подтверждения"></asp:Label>
         <asp:TextBox ID="tbCode" runat="server"></asp:TextBox>
         <asp:Button ID="btnCode" runat="server" Text="Подтвердить" />
+        <br />
+        <br />
    </asp:Panel>
 
 </asp:Content>
