@@ -68,24 +68,6 @@ Partial Public Class Registration
     Protected WithEvents tbPassRep As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''lblName элемент управления.
-    '''</summary>
-    '''<remarks>
-    '''Автоматически создаваемое поле.
-    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-    '''</remarks>
-    Protected WithEvents lblName As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''tbName элемент управления.
-    '''</summary>
-    '''<remarks>
-    '''Автоматически создаваемое поле.
-    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-    '''</remarks>
-    Protected WithEvents tbName As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''btnReg элемент управления.
     '''</summary>
     '''<remarks>

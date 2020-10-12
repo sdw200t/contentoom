@@ -7,13 +7,13 @@ Public Class MailSender
             Dim Smtp_Server As New SmtpClient
             Dim e_mail As New MailMessage()
             Smtp_Server.UseDefaultCredentials = False
-            Smtp_Server.Credentials = New Net.NetworkCredential("info@innlook.ru", "InnLook2019")
+            Smtp_Server.Credentials = New Net.NetworkCredential("bytest@innlook.ru", "Veron20Took")
             Smtp_Server.Port = 587
             Smtp_Server.EnableSsl = True
             Smtp_Server.Host = "smtp.mail.ru"
 
             e_mail = New MailMessage()
-            e_mail.From = New MailAddress("info@innlook.ru")
+            e_mail.From = New MailAddress("bytest@innlook.ru")
             e_mail.To.Add(AdressTo)
             e_mail.Subject = "Тестовая отправка"
             e_mail.IsBodyHtml = True

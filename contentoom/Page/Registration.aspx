@@ -23,8 +23,6 @@
        </div>
        <div class="row">
             <div class ="cell" >
-                <asp:Label ID="lblName" runat="server" Text="Имя" />
-                <asp:TextBox ID="tbName" runat="server" />
             </div>
        </div>
        <div class="row">

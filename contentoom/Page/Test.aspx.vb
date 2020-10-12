@@ -69,7 +69,6 @@ Public Class _Default
 
         Dim User = New Users With {
                 .IdGroupUsers = 1,
-                .Name = tbName.Text,
                 .Login = tbLoginNew.Text,
                 .Password = tbPassNew.Text,
                 .CodeRegistration = rnd.Next(1000, 10000)

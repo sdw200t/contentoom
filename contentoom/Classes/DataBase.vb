@@ -105,4 +105,70 @@ Public Class DataBase
         End Try
         Return True
     End Function
+
+    Public Function Execute_SP_Users_Insert(IdGroupUsers As Integer,
+                                            Login As String,
+                                            Password As String,
+                                            CodeRegistration As Integer) As Boolean
+        LogTxt.SaveLog("**************************************")
+        LogTxt.SaveLog("Class DataBase")
+        LogTxt.SaveLog("Execute_SP_Users_Insert")
+        LogTxt.SaveLog("--------------------------------------")
+        Try
+            With _Command
+                .CommandType = CommandType.StoredProcedure
+                .CommandText = "dctUsers_Insert"
+
+                ' Задаем парметр IdGroupUsers
+                Dim p_IdGroupUsers As New MySqlParameter With
+                    {
+                    .ParameterName = "IdGroupUsers",
+                    .Value = IdGroupUsers
+                    }
+                .Parameters.Add(p_IdGroupUsers)
+
+                ' Задаем парметр Login
+                Dim p_Login As New MySqlParameter With
+                    {
+                    .ParameterName = "Login",
+                    .Value = Login
+                    }
+                .Parameters.Add(p_Login)
+
+                ' Задаем парметр Password
+                Dim p_Password As New MySqlParameter With
+                    {
+                    .ParameterName = "Password",
+                    .Value = Password
+                    }
+                .Parameters.Add(p_Password)
+
+                ' Задаем парметр CodeRegistration
+                Dim p_CodeRegistration As New MySqlParameter With
+                    {
+                    .ParameterName = "CodeRegistration",
+                    .Value = CodeRegistration
+                    }
+                .Parameters.Add(p_CodeRegistration)
+
+                ' Задаем парметр ID
+                Dim p_ID As New MySqlParameter With
+                    {
+                    .ParameterName = "ID"
+                    }
+                .Parameters.Add(p_ID)
+                .Parameters("@ID").Direction = ParameterDirection.Output
+
+                .ExecuteNonQuery()
+
+                Dim ID = .Parameters("@ID").Value
+            End With
+            Return True
+        Catch ex As Exception
+            MsgBox("При попытке выполнить команду произошла следующая ошибка. " & ex.Message)
+            LogTxt.SaveLog(ex.Message)
+            Return False
+        End Try
+        Return True
+    End Function
 End Class

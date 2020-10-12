@@ -17,7 +17,6 @@
 
         Dim User = New Users With {
                 .IdGroupUsers = 1,
-                .Name = tbName.Text,
                 .Login = tbLoginNew.Text,
                 .Password = tbPassNew.Text,
                 .CodeRegistration = rnd.Next(1000, 10000)
@@ -35,8 +34,13 @@
         Reader.Close()
 
         ' отправка команды создания пользователя
-        DB.CommandText = User.QueryInto
-        Dim rez = DB.ExecuteNonQuery
+        'DB.CommandText = User.QueryInto
+        Dim rez = DB.Execute_SP_Users_Insert(
+                1,
+                tbLoginNew.Text,
+                tbPassNew.Text,
+                rnd.Next(1000, 10000)
+        )
         If rez Then
             MailSender.SendEmail(User.Login, User.CodeRegistration)
             pCode.Visible = True
