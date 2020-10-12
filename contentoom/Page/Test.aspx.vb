@@ -127,4 +127,10 @@ Public Class _Default
     Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Response.Redirect("Login.aspx")
     End Sub
+
+    Protected Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim password = tbPassNew.Text
+        ' Demonstrate that "Z9f%a>2kQ" is not complex.
+        MsgBox(password & " is complex: " & RegexUtilities.ValidatePassword(password))
+    End Sub
 End Class

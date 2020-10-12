@@ -27,6 +27,7 @@
             <br />
             <br />
             <asp:Button ID="Button1" runat="server" Text="отправить письмо" />
+            <asp:Button ID="Button4" runat="server" Text="Проверить сложность пароля" />
             <br />
 
         </div>

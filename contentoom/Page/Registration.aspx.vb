@@ -1,4 +1,5 @@
-﻿Public Class Registration
+﻿
+Public Class Registration
     Inherits System.Web.UI.Page
 
     Protected Sub btnReg_Click(sender As Object, e As EventArgs) Handles btnReg.Click
