@@ -122,7 +122,7 @@ Public Class DataBase
                 ' Задаем парметр IdGroupUsers
                 Dim p_IdGroupUsers As New MySqlParameter With
                     {
-                    .ParameterName = "IdGroupUsers",
+                    .ParameterName = "pIdGroupUsers",
                     .Value = IdGroupUsers
                     }
                 .Parameters.Add(p_IdGroupUsers)
@@ -130,7 +130,7 @@ Public Class DataBase
                 ' Задаем парметр Login
                 Dim p_Login As New MySqlParameter With
                     {
-                    .ParameterName = "Login",
+                    .ParameterName = "pLogin",
                     .Value = Login
                     }
                 .Parameters.Add(p_Login)
@@ -138,7 +138,7 @@ Public Class DataBase
                 ' Задаем парметр Password
                 Dim p_Password As New MySqlParameter With
                     {
-                    .ParameterName = "Password",
+                    .ParameterName = "pPassword",
                     .Value = Password
                     }
                 .Parameters.Add(p_Password)
@@ -146,7 +146,7 @@ Public Class DataBase
                 ' Задаем парметр CodeRegistration
                 Dim p_CodeRegistration As New MySqlParameter With
                     {
-                    .ParameterName = "CodeRegistration",
+                    .ParameterName = "pCodeRegistration",
                     .Value = CodeRegistration
                     }
                 .Parameters.Add(p_CodeRegistration)
@@ -154,14 +154,14 @@ Public Class DataBase
                 ' Задаем парметр ID
                 Dim p_ID As New MySqlParameter With
                     {
-                    .ParameterName = "ID"
+                    .ParameterName = "pID"
                     }
                 .Parameters.Add(p_ID)
-                .Parameters("@ID").Direction = ParameterDirection.Output
+                .Parameters("pID").Direction = ParameterDirection.Output
 
                 .ExecuteNonQuery()
 
-                Dim ID = .Parameters("@ID").Value
+                Dim ID = .Parameters("pID").Value
             End With
             Return True
         Catch ex As Exception

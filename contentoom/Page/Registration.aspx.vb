@@ -14,12 +14,13 @@
         End If
 
         Dim rnd = New Random
+        Dim CodeRegistration = rnd.Next(1000, 10000)
 
         Dim User = New Users With {
                 .IdGroupUsers = 1,
                 .Login = tbLoginNew.Text,
                 .Password = tbPassNew.Text,
-                .CodeRegistration = rnd.Next(1000, 10000)
+                .CodeRegistration = CodeRegistration
             }
 
         Dim DB = New DataBase
@@ -39,7 +40,7 @@
                 1,
                 tbLoginNew.Text,
                 tbPassNew.Text,
-                rnd.Next(1000, 10000)
+                CodeRegistration
         )
         If rez Then
             MailSender.SendEmail(User.Login, User.CodeRegistration)
@@ -55,6 +56,7 @@
     End Sub
 
     Protected Sub btnCode_Click(sender As Object, e As EventArgs) Handles btnCode.Click
+
         Dim DB = New DataBase
 
         DB.CommandText = Users.QuerySelectCode(tbCode.Text)
@@ -62,6 +64,8 @@
         Dim Reader = DB.ExecuteReader()
         If Reader.Read Then
             MsgBox("Код подтвержден")
+        Else
+            MsgBox("Код НЕ подтвержден")
         End If
         Reader.Close()
 
