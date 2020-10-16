@@ -1,8 +1,6 @@
 ﻿Imports System.Net
 Imports System.Web.Services
 
-
-
 Public Class _Default
     Inherits Page
 
@@ -133,4 +131,9 @@ Public Class _Default
         ' Demonstrate that "Z9f%a>2kQ" is not complex.
         MsgBox(password & " is complex: " & RegexUtilities.ValidatePassword(password))
     End Sub
+
+
+
+
+
 End Class
