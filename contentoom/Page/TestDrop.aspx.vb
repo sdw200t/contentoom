@@ -1,4 +1,6 @@
-﻿Public Class TestDrop
+﻿Imports System.IO
+
+Public Class TestDrop
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -17,12 +19,14 @@
 
         If File1.PostedFile.ContentLength > 0 Then
 
+            Dim fi As New FileInfo(File1.Value)
+
             Try
                 File1.PostedFile.SaveAs(("G:\Обмен\" & Text1.Value))
                 Span1.InnerHtml = "File uploaded successfully to <b>G:\Обмен\" &
                       Text1.Value & "</b> on the Web server."
 
-                imgAlbom.Src = "https://s.4pda.to/C9NjWqfhbuLz2TLBnXi8cKXhrs6z1QeoVhsNiK.jpg"
+                imgAlbom.Src = fi.FullName
 
             Catch exc As Exception
                 Span1.InnerHtml = "Error saving file <b>G:\Обмен\" &
@@ -30,6 +34,10 @@
             End Try
 
         End If
+
+    End Sub
+
+    Protected Sub CaptchaCodeTextBox_TextChanged(sender As Object, e As EventArgs) Handles CaptchaCodeTextBox.TextChanged
 
     End Sub
 End Class
