@@ -1,0 +1,159 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="app.master.vb" Inherits="contentoom.TemplateApp" %>
+
+<%--<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>--%>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>
+			<asp:ContentPlaceHolder ID="head" runat="server">
+			</asp:ContentPlaceHolder>
+		</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/template/app/styles.css">
+		<link rel="stylesheet" href="/template/app/template_styles.css">
+	</head>
+	<body>
+		<div class="left_block">
+			<div class="left_block_body">
+				<div class="logo">
+					<a href="/page/index.aspx">
+						<img src="/img/logo-height.png"  alt="logo">
+					</a>
+				</div>
+				<div class="left_menu_title">
+					<div class="left_menu_title_txt">
+						МЕНЮ
+					</div>
+				</div>
+				<div class="left_menu">
+<!--					Все релизы-->
+					<div class="menu_item_app">
+						<a href="#" class="menu_item_a">
+							<div>
+								<img class="menu_item_img" src="/img/ico/menu_ico_all.svg">
+							</div>
+							<div class="menu_item_txt">
+								Все релизы
+							</div>
+						</a>
+					</div>
+<!--					Аудио релизы-->
+					<div class="menu_item_app">
+						<a href="/app/audio-release/my-release-list.php" class="menu_item_a">
+							<div>
+								<img class="menu_item_img" src="/img/ico/menu_ico_audio.svg">
+							</div>
+							<div class="menu_item_txt">
+								Аудио релизы
+							</div>
+						</a>
+					</div>
+<!--					Рингтоны-->
+					<div class="menu_item_app">
+						<a href="/app/ringtone/release-list.php" class="menu_item_a">
+							<div>
+								<img class="menu_item_img" src="/img/ico/menu_ico_ringtone.svg">
+							</div>
+							<div class="menu_item_txt">
+								Рингтоны
+							</div>
+						</a>
+					</div>
+<!--					Видео-->
+					<div class="menu_item_app">
+						<a href="#" class="menu_item_a_blocked" title="не доступно">
+							<div>
+								<img class="menu_item_img" src="/img/ico/menu_ico_video.svg">
+							</div>
+							<div class="menu_item_txt">
+								Видео
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="bot_menu">
+<!--					Список пользователей-->
+					<div class="menu_item_app">
+						<a href="/app/user/list.php" class="menu_item_a">
+							<div>
+								<img class="menu_item_img" src="/img/ico/menu_ico_userlist.svg">
+							</div>
+							<div class="menu_item_txt">
+								Список пользователей
+							</div>
+						</a>
+					</div>
+<!--					Профиль-->
+					<div class="menu_item_app">
+						<a href="/app/user/profile-view.php" class="menu_item_a">
+							<div>
+								<img class="menu_item_img" src="/img/ico/menu_ico_profile.svg">
+							</div>
+							<div class="menu_item_txt">
+								Профиль
+							</div>
+						</a>
+					</div>
+<!--					Язык-->
+					<div class="menu_item_app flexim">
+						<img class="menu_item_img" src="/img/ico/menu_ico_language.svg">
+						<div class="select_lang" style="vertical-align: bottom;">
+							<select name="Lang" class="ui-ctl-element W100" onchange="action_lang()">
+								<option value="ru">RU</option>
+								<option value="en">EN</option>
+							</select>
+							<input type="hidden" name="siteparams" value="lang_ui=">
+						</div>
+					</div>
+<!--					Выход-->
+					<div class="menu_item_app">
+						<a href="/" class="menu_item_a">
+							<div>
+								<img class="menu_item_img" src="/img/ico/menu_ico_exit.svg">
+							</div>
+							<div class="menu_item_txt">
+								Выход
+							</div>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="workarea">
+					<div class="workarea_body">
+						<asp:ContentPlaceHolder ID="ContentPlaceHolderApp" runat="server">
+						</asp:ContentPlaceHolder>
+					</div>
+		</div>
+		
+		<div class="footer">
+			<div class="footer_body">
+			</div>
+		</div>
+						
+		<!--Запрос об использовании куки-->
+		<%--<script src="/components/js/notification_cookie.js"></script>--%>
+	</body>
+</html>

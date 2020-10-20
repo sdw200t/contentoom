@@ -1,0 +1,120 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="main.master.vb" Inherits="contentoom.TemplateMain" %>
+
+<%--<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="/template/main/styles.css">
+    <link rel="stylesheet" href="/template/main/template_styles.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>--%>
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>
+			<asp:ContentPlaceHolder ID="head" runat="server">
+			</asp:ContentPlaceHolder>
+		</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/template/main/styles.css">
+		<link rel="stylesheet" href="/template/main/template_styles.css">
+	</head>
+	<body>
+<!--	BEGIN HEADER	-->
+		<div class="header">
+			<div class="header-body">
+				<div class="logo">
+					<div class="logoimg"><img src="/img/logo.png" width="41" height="41" alt="logo"></div>
+					<div class="logotxt"><a href="/"><H1>CONTENTOOM</H1></a></div>
+				</div>
+				<div class="menu">
+					<div class="top_menu_content">
+						<ul class="top_menu_elem">
+							<!-- first level-->
+								<li class="menu_block_elem">
+									<a href="/">
+										ГЛАВНАЯ
+									</a>
+								</li>
+							<!-- first level-->
+								<li class="menu_block_elem">
+									<a href="/about">
+										О КОМПАНИИ
+									</a>
+								</li>
+							<!-- first level-->
+								<li class="menu_block_elem">
+									<a href="/service-rules">
+										ПРАВИЛА СЕРВИСА
+									</a>
+								</li>
+							<!-- first level-->
+								<li class="menu_block_elem">
+									<a href="/contacts/">
+										КОНТАКТЫ
+									</a>
+								</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="sedi_buttons">
+					
+						<select name="Lang" class="ui-ctl-element" onchange="action_lang()">
+							<option value="ru">RU</option>
+							<option value="en">EN</option>
+						</select>
+						<input type="hidden" name="siteparams" value="lang_ui=">
+						<a href="/page/app/audio-release/list.aspx" class="button signin">ВОЙТИ</a>
+				</div>
+
+			</div>
+		</div>
+<!--	END HEADER	-->
+
+<!--	BEGIN WORKAREA	-->
+		<div class="workarea">
+
+
+					<div class="workarea-body">
+						<asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+						</asp:ContentPlaceHolder>
+					</div>
+
+
+		</div>
+<!--	END WORKAREA	-->
+		
+<!--	BEGIN FOOTER	-->
+		<div class="footer">
+			<div class="footer-nav">
+				<div class="container">
+				</div>
+			</div>
+			<div class="footer-company">
+				<div class="container">
+					<H3>CONTENTOOM</H3>
+				</div>
+			</div>
+		</div>
+<!--	END FOOTER	-->
+		
+<!--Запрос об использовании куки-->
+		<%--<script src="/components/js/notification_cookie.js"></script>--%>
+	</body>
+</html>

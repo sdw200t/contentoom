@@ -195,7 +195,304 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\.section.php" />
+    <Content Include="img\animation\loading45.gif" />
+    <Content Include="img\ico\.section.php" />
+    <Content Include="img\ico\audio_pause.svg" />
+    <Content Include="img\ico\audio_play.svg" />
+    <Content Include="img\ico\audio_release_list_count.gif" />
+    <Content Include="img\ico\audio_release_list_count.svg" />
+    <Content Include="img\ico\audio_release_list_number.gif" />
+    <Content Include="img\ico\audio_release_list_number.svg" />
+    <Content Include="img\ico\audio_release_list_time.gif" />
+    <Content Include="img\ico\audio_release_list_time.svg" />
+    <Content Include="img\ico\audio_stop.svg" />
+    <Content Include="img\ico\calendar.gif" />
+    <Content Include="img\ico\cover.gif" />
+    <Content Include="img\ico\coverMini.svg" />
+    <Content Include="img\ico\delete.gif" />
+    <Content Include="img\ico\delete.svg" />
+    <Content Include="img\ico\delete_active.svg" />
+    <Content Include="img\ico\digital_buklet.svg" />
+    <Content Include="img\ico\digital_buklet_empety.svg" />
+    <Content Include="img\ico\download.svg" />
+    <Content Include="img\ico\download_active.svg" />
+    <Content Include="img\ico\edit.gif" />
+    <Content Include="img\ico\edit.svg" />
+    <Content Include="img\ico\menu_ico_all.svg" />
+    <Content Include="img\ico\menu_ico_all_select.svg" />
+    <Content Include="img\ico\menu_ico_audio.svg" />
+    <Content Include="img\ico\menu_ico_audio_select.svg" />
+    <Content Include="img\ico\menu_ico_exit.svg" />
+    <Content Include="img\ico\menu_ico_language.svg" />
+    <Content Include="img\ico\menu_ico_profile.svg" />
+    <Content Include="img\ico\menu_ico_profile_select.svg" />
+    <Content Include="img\ico\menu_ico_ringtone.svg" />
+    <Content Include="img\ico\menu_ico_ringtone_select.svg" />
+    <Content Include="img\ico\menu_ico_services.svg" />
+    <Content Include="img\ico\menu_ico_services_select.svg" />
+    <Content Include="img\ico\menu_ico_userlist.svg" />
+    <Content Include="img\ico\menu_ico_userlist_select.svg" />
+    <Content Include="img\ico\menu_ico_video.svg" />
+    <Content Include="img\ico\menu_ico_video_select.svg" />
+    <Content Include="img\ico\name_artist_list.svg" />
+    <Content Include="img\ico\name_artist_save.svg" />
+    <Content Include="img\ico\profile.svg" />
+    <Content Include="img\ico\social_instagram.svg" />
+    <Content Include="img\ico\social_link.svg" />
+    <Content Include="img\ico\social_myspace.svg" />
+    <Content Include="img\ico\social_ok.svg" />
+    <Content Include="img\ico\social_pinterest.svg" />
+    <Content Include="img\ico\social_spotify.svg" />
+    <Content Include="img\ico\social_tiktok.svg" />
+    <Content Include="img\ico\social_twitter.svg" />
+    <Content Include="img\ico\social_vk.svg" />
+    <Content Include="img\ico\social_yt.svg" />
+    <Content Include="img\ico\upload.gif" />
+    <Content Include="img\logo-height.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\region\africa\Algeria DZ.gif" />
+    <Content Include="img\region\africa\Angola AO.gif" />
+    <Content Include="img\region\africa\Benin BJ.gif" />
+    <Content Include="img\region\africa\Botswana BW.gif" />
+    <Content Include="img\region\africa\Burkina Faso BF.gif" />
+    <Content Include="img\region\africa\Burundi BI.gif" />
+    <Content Include="img\region\africa\Cameroon CM.gif" />
+    <Content Include="img\region\africa\Cape Verde CV.gif" />
+    <Content Include="img\region\africa\Central African Republic CF.gif" />
+    <Content Include="img\region\africa\Chad TD.gif" />
+    <Content Include="img\region\africa\Comoros KM.gif" />
+    <Content Include="img\region\africa\Cote Ivoire CI.gif" />
+    <Content Include="img\region\africa\Djibouti DJ.gif" />
+    <Content Include="img\region\africa\Egypt EG.gif" />
+    <Content Include="img\region\africa\Equatorial Guinea GQ.gif" />
+    <Content Include="img\region\africa\Eritrea ER.gif" />
+    <Content Include="img\region\africa\Ethiopia ET.gif" />
+    <Content Include="img\region\africa\Gabon GA.gif" />
+    <Content Include="img\region\africa\Gambia, The GM.gif" />
+    <Content Include="img\region\africa\Ghana GH.gif" />
+    <Content Include="img\region\africa\Guinea GN.gif" />
+    <Content Include="img\region\africa\Guinea-bissau GW.gif" />
+    <Content Include="img\region\africa\Kenya KE.gif" />
+    <Content Include="img\region\africa\Lesotho LS.gif" />
+    <Content Include="img\region\africa\Liberia LR.gif" />
+    <Content Include="img\region\africa\Libya LY.gif" />
+    <Content Include="img\region\africa\Madagascar MG.gif" />
+    <Content Include="img\region\africa\Malawi MW.gif" />
+    <Content Include="img\region\africa\Mali ML.gif" />
+    <Content Include="img\region\africa\Mauritania MR.gif" />
+    <Content Include="img\region\africa\Mauritius MU.gif" />
+    <Content Include="img\region\africa\Mayotte YT.gif" />
+    <Content Include="img\region\africa\Morocco MA.gif" />
+    <Content Include="img\region\africa\Mozambique MZ.gif" />
+    <Content Include="img\region\africa\Namibia NA.gif" />
+    <Content Include="img\region\africa\Niger NE.gif" />
+    <Content Include="img\region\africa\Nigeria NG.gif" />
+    <Content Include="img\region\africa\Republic Of Congo CG.gif" />
+    <Content Include="img\region\africa\Reunion RE.gif" />
+    <Content Include="img\region\africa\Rwanda RW.gif" />
+    <Content Include="img\region\africa\Sao Tome And Principe ST.gif" />
+    <Content Include="img\region\africa\Senegal SN.gif" />
+    <Content Include="img\region\africa\Seychelles SC.gif" />
+    <Content Include="img\region\africa\Sierra Leone SL.gif" />
+    <Content Include="img\region\africa\Somalia SO.gif" />
+    <Content Include="img\region\africa\South Africa ZA.gif" />
+    <Content Include="img\region\africa\Sudan SD.gif" />
+    <Content Include="img\region\africa\Swaziland SZ.gif" />
+    <Content Include="img\region\africa\Tanzania TZ.gif" />
+    <Content Include="img\region\africa\The Democratic Republic Of The Congo CD.gif" />
+    <Content Include="img\region\africa\Togo TG.gif" />
+    <Content Include="img\region\africa\Tunisia TN.gif" />
+    <Content Include="img\region\africa\Uganda UG.gif" />
+    <Content Include="img\region\africa\Western Sahara EH.gif" />
+    <Content Include="img\region\africa\Zambia ZM.gif" />
+    <Content Include="img\region\africa\Zimbabwe ZW.gif" />
+    <Content Include="img\region\antarctica\Antarctica AQ.gif" />
+    <Content Include="img\region\antarctica\Bouvet Island BV.gif" />
+    <Content Include="img\region\antarctica\French Southern Territories TF.gif" />
+    <Content Include="img\region\asia\Afghanistan AF.gif" />
+    <Content Include="img\region\asia\Bahrain BH.gif" />
+    <Content Include="img\region\asia\Bangladesh BD.gif" />
+    <Content Include="img\region\asia\Bhutan BT.gif" />
+    <Content Include="img\region\asia\British Indian Ocean IO.gif" />
+    <Content Include="img\region\asia\Brunei Darussalam BN.gif" />
+    <Content Include="img\region\asia\Cambodia KH.gif" />
+    <Content Include="img\region\asia\China CN.gif" />
+    <Content Include="img\region\asia\Hong Kong, China HK.gif" />
+    <Content Include="img\region\asia\India IN.gif" />
+    <Content Include="img\region\asia\Indonesia ID.gif" />
+    <Content Include="img\region\asia\Iran IR.gif" />
+    <Content Include="img\region\asia\Iraq IQ.gif" />
+    <Content Include="img\region\asia\Israel IL.gif" />
+    <Content Include="img\region\asia\Japan JP.gif" />
+    <Content Include="img\region\asia\Jordan JO.gif" />
+    <Content Include="img\region\asia\Kuwait KW.gif" />
+    <Content Include="img\region\asia\Kyrgyzstan KG.gif" />
+    <Content Include="img\region\asia\Lao People%27s Democratic Republic LA.gif" />
+    <Content Include="img\region\asia\Lebanon LB.gif" />
+    <Content Include="img\region\asia\Macao, China MO.gif" />
+    <Content Include="img\region\asia\Malaysia MY.gif" />
+    <Content Include="img\region\asia\Maldives MV.gif" />
+    <Content Include="img\region\asia\Mongolia MN.gif" />
+    <Content Include="img\region\asia\Myanmar MM.gif" />
+    <Content Include="img\region\asia\Nepal NP.gif" />
+    <Content Include="img\region\asia\North Korea KP.gif" />
+    <Content Include="img\region\asia\Oman OM.gif" />
+    <Content Include="img\region\asia\Pakistan PK.gif" />
+    <Content Include="img\region\asia\Palau PW.gif" />
+    <Content Include="img\region\asia\Palestinian Territories PS.gif" />
+    <Content Include="img\region\asia\Philippines PH.gif" />
+    <Content Include="img\region\asia\Qatar QA.gif" />
+    <Content Include="img\region\asia\Saudi Arabia SA.gif" />
+    <Content Include="img\region\asia\Singapore SG.gif" />
+    <Content Include="img\region\asia\South Korea KR.gif" />
+    <Content Include="img\region\asia\Sri Lanka LK.gif" />
+    <Content Include="img\region\asia\Syrian Arab Republic SY.gif" />
+    <Content Include="img\region\asia\Taiwan, Province Of China TW.gif" />
+    <Content Include="img\region\asia\Tajikistan TJ.gif" />
+    <Content Include="img\region\asia\Thailand TH.gif" />
+    <Content Include="img\region\asia\Timor-leste TL.gif" />
+    <Content Include="img\region\asia\Turkmenistan TM.gif" />
+    <Content Include="img\region\asia\United Arab Emirates AE.gif" />
+    <Content Include="img\region\asia\Uzbekistan UZ.gif" />
+    <Content Include="img\region\asia\Viet Nam VN.gif" />
+    <Content Include="img\region\asia\Yemen YE.gif" />
+    <Content Include="img\region\australia\American Samoa AS.gif" />
+    <Content Include="img\region\australia\Australia AU.gif" />
+    <Content Include="img\region\australia\Christmas Island CX.gif" />
+    <Content Include="img\region\australia\Cocos %28keeling%29 Islands CC.gif" />
+    <Content Include="img\region\australia\Cook Islands CK.gif" />
+    <Content Include="img\region\australia\Fiji FJ.gif" />
+    <Content Include="img\region\australia\French Polynesia PF.gif" />
+    <Content Include="img\region\australia\Guam GU.gif" />
+    <Content Include="img\region\australia\Heard Island And Mcdonald Islands HM.gif" />
+    <Content Include="img\region\australia\Kiribati KI.gif" />
+    <Content Include="img\region\australia\Marshall Islands MH.gif" />
+    <Content Include="img\region\australia\Micronesia, Federated States Of FM.gif" />
+    <Content Include="img\region\australia\Nauru NR.gif" />
+    <Content Include="img\region\australia\New Caledonia NC.gif" />
+    <Content Include="img\region\australia\New Zealand NZ.gif" />
+    <Content Include="img\region\australia\Niue NU.gif" />
+    <Content Include="img\region\australia\Norfolk Island NF.gif" />
+    <Content Include="img\region\australia\Northern Mariana Islands MP.gif" />
+    <Content Include="img\region\australia\Papua New Guinea PG.gif" />
+    <Content Include="img\region\australia\Pitcairn PN.gif" />
+    <Content Include="img\region\australia\Samoa WS.gif" />
+    <Content Include="img\region\australia\Solomon Islands SB.gif" />
+    <Content Include="img\region\australia\Tokelau TK.gif" />
+    <Content Include="img\region\australia\Tonga TO.gif" />
+    <Content Include="img\region\australia\Tuvalu TV.gif" />
+    <Content Include="img\region\australia\United States Minor Outlying Islands UM.gif" />
+    <Content Include="img\region\australia\Vanuatu VU.gif" />
+    <Content Include="img\region\australia\Wallis And Futuna WF.gif" />
+    <Content Include="img\region\europe\Aland Islands AX.gif" />
+    <Content Include="img\region\europe\Albania AL.gif" />
+    <Content Include="img\region\europe\Andorra AD.gif" />
+    <Content Include="img\region\europe\Armenia AM.gif" />
+    <Content Include="img\region\europe\Austria AT.gif" />
+    <Content Include="img\region\europe\Azerbaijan AZ.gif" />
+    <Content Include="img\region\europe\Belarus BY.gif" />
+    <Content Include="img\region\europe\Belgium BE.gif" />
+    <Content Include="img\region\europe\Bosnia And Herzegovina BA.gif" />
+    <Content Include="img\region\europe\Bulgaria BG.gif" />
+    <Content Include="img\region\europe\Croatia HR.gif" />
+    <Content Include="img\region\europe\Cyprus CY.gif" />
+    <Content Include="img\region\europe\Czech Republic CZ.gif" />
+    <Content Include="img\region\europe\Denmark DK.gif" />
+    <Content Include="img\region\europe\Estonia EE.gif" />
+    <Content Include="img\region\europe\Faeroe Islands FO.gif" />
+    <Content Include="img\region\europe\Finland FI.gif" />
+    <Content Include="img\region\europe\France FR.gif" />
+    <Content Include="img\region\europe\Georgia GE.gif" />
+    <Content Include="img\region\europe\Germany DE.gif" />
+    <Content Include="img\region\europe\Gibraltar GI.gif" />
+    <Content Include="img\region\europe\Greece GR.gif" />
+    <Content Include="img\region\europe\Holy See %28vatican City State%29 VA.gif" />
+    <Content Include="img\region\europe\Hungary HU.gif" />
+    <Content Include="img\region\europe\Iceland IS.gif" />
+    <Content Include="img\region\europe\Ireland IE.gif" />
+    <Content Include="img\region\europe\Italy IT.gif" />
+    <Content Include="img\region\europe\Kazakhstan KZ.gif" />
+    <Content Include="img\region\europe\Latvia LV.gif" />
+    <Content Include="img\region\europe\Liechtenstein LI.gif" />
+    <Content Include="img\region\europe\Lithuania LT.gif" />
+    <Content Include="img\region\europe\Luxembourg LU.gif" />
+    <Content Include="img\region\europe\Macedonia MK.gif" />
+    <Content Include="img\region\europe\Malta MT.gif" />
+    <Content Include="img\region\europe\Moldova MD.gif" />
+    <Content Include="img\region\europe\Monaco MC.gif" />
+    <Content Include="img\region\europe\Netherlands NL.gif" />
+    <Content Include="img\region\europe\Norway NO.gif" />
+    <Content Include="img\region\europe\Poland PL.gif" />
+    <Content Include="img\region\europe\Portugal PT.gif" />
+    <Content Include="img\region\europe\Romania RO.gif" />
+    <Content Include="img\region\europe\Russian Federation RU.gif" />
+    <Content Include="img\region\europe\Saint Helena SH.gif" />
+    <Content Include="img\region\europe\San Marino SM.gif" />
+    <Content Include="img\region\europe\Serbia And Montenegro CS.gif" />
+    <Content Include="img\region\europe\Slovakia SK.gif" />
+    <Content Include="img\region\europe\Slovenia SI.gif" />
+    <Content Include="img\region\europe\Spain ES.gif" />
+    <Content Include="img\region\europe\Svalbard And Jan Mayen SJ.gif" />
+    <Content Include="img\region\europe\Sweden SE.gif" />
+    <Content Include="img\region\europe\Switzerland CH.gif" />
+    <Content Include="img\region\europe\Turkey TR.gif" />
+    <Content Include="img\region\europe\Ukraine UA.gif" />
+    <Content Include="img\region\europe\United Kingdom GB.gif" />
+    <Content Include="img\region\northAmerica\Anguilla AI.gif" />
+    <Content Include="img\region\northAmerica\Antigua And Barbuda AG.gif" />
+    <Content Include="img\region\northAmerica\Bahamas BS.gif" />
+    <Content Include="img\region\northAmerica\Barbados BB.gif" />
+    <Content Include="img\region\northAmerica\Belize BZ.gif" />
+    <Content Include="img\region\northAmerica\Bermuda BM.gif" />
+    <Content Include="img\region\northAmerica\Canada CA.gif" />
+    <Content Include="img\region\northAmerica\Cayman Islands KY.gif" />
+    <Content Include="img\region\northAmerica\Costa Rica CR.gif" />
+    <Content Include="img\region\northAmerica\Cuba CU.gif" />
+    <Content Include="img\region\northAmerica\Dominica DM.gif" />
+    <Content Include="img\region\northAmerica\Dominican Republic DO.gif" />
+    <Content Include="img\region\northAmerica\El Salvador SV.gif" />
+    <Content Include="img\region\northAmerica\Greenland GL.gif" />
+    <Content Include="img\region\northAmerica\Grenada GD.gif" />
+    <Content Include="img\region\northAmerica\Guadeloupe GP.gif" />
+    <Content Include="img\region\northAmerica\Guatemala GT.gif" />
+    <Content Include="img\region\northAmerica\Haiti HT.gif" />
+    <Content Include="img\region\northAmerica\Honduras HN.gif" />
+    <Content Include="img\region\northAmerica\Jamaica JM.gif" />
+    <Content Include="img\region\northAmerica\Martinique MQ.gif" />
+    <Content Include="img\region\northAmerica\Mexico MX.gif" />
+    <Content Include="img\region\northAmerica\Montserrat MS.gif" />
+    <Content Include="img\region\northAmerica\Netherlands Antilles AN.gif" />
+    <Content Include="img\region\northAmerica\Nicaragua NI.gif" />
+    <Content Include="img\region\northAmerica\Panama PA.gif" />
+    <Content Include="img\region\northAmerica\Puerto Rico PR.gif" />
+    <Content Include="img\region\northAmerica\Saint Kitts And Nevis KN.gif" />
+    <Content Include="img\region\northAmerica\Saint Lucia LC.gif" />
+    <Content Include="img\region\northAmerica\Saint Pierre And Miquelon PM.gif" />
+    <Content Include="img\region\northAmerica\Turks And Caicos Islands TC.gif" />
+    <Content Include="img\region\northAmerica\United States US.gif" />
+    <Content Include="img\region\northAmerica\Virgin Islands, British VG.gif" />
+    <Content Include="img\region\northAmerica\Virgin Islands, U.S. VI.gif" />
+    <Content Include="img\region\southAmerica\Argentina AR.gif" />
+    <Content Include="img\region\southAmerica\Aruba AW.gif" />
+    <Content Include="img\region\southAmerica\Bolivia BO.gif" />
+    <Content Include="img\region\southAmerica\Brazil BR.gif" />
+    <Content Include="img\region\southAmerica\Chile CL.gif" />
+    <Content Include="img\region\southAmerica\Colombia CO.gif" />
+    <Content Include="img\region\southAmerica\Ecuador EC.gif" />
+    <Content Include="img\region\southAmerica\Falkland Islands FK.gif" />
+    <Content Include="img\region\southAmerica\French Guiana GF.gif" />
+    <Content Include="img\region\southAmerica\Guyana GY.gif" />
+    <Content Include="img\region\southAmerica\Paraguay PY.gif" />
+    <Content Include="img\region\southAmerica\Peru PE.gif" />
+    <Content Include="img\region\southAmerica\Saint Vincent And The Grenadines VC.gif" />
+    <Content Include="img\region\southAmerica\South Georgia And The South Sandwich Islands GS.gif" />
+    <Content Include="img\region\southAmerica\Suriname SR.gif" />
+    <Content Include="img\region\southAmerica\Trinidad And Tobago TT.gif" />
+    <Content Include="img\region\southAmerica\Uruguay UY.gif" />
+    <Content Include="img\region\southAmerica\Venezuela VE.gif" />
     <Content Include="Page\About.aspx" />
+    <Content Include="Page\app\audio-release\list.aspx" />
     <Content Include="Page\Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -211,6 +508,7 @@
     <Content Include="Page\Registration.aspx" />
     <Content Include="Page\TestDrop.aspx" />
     <Content Include="Page\TestFTP.aspx" />
+    <Content Include="Page\index.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -336,6 +634,12 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="template\app\styles.css" />
+    <Content Include="template\app\template_styles.css" />
+    <Content Include="template\empty\styles.css" />
+    <Content Include="template\empty\template_styles.css" />
+    <Content Include="template\main\styles.css" />
+    <Content Include="template\main\template_styles.css" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -352,6 +656,13 @@
     <Compile Include="Classes\LogTxt.vb" />
     <Compile Include="Classes\MailSender.vb" />
     <Compile Include="Classes\RegexUtilities.vb" />
+    <Compile Include="Page\app\audio-release\list.aspx.designer.vb">
+      <DependentUpon>list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\app\audio-release\list.aspx.vb">
+      <DependentUpon>list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Page\Contact.aspx.designer.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
@@ -417,11 +728,42 @@
       <DependentUpon>TestFTP.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Site.Master.designer.vb">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="Page\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Site.Master.vb">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="Page\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Resources\index.en.Designer.vb">
+      <DependentUpon>index.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\index.ru.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>index.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="template\app\app.Master.designer.vb">
+      <DependentUpon>app.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\app\app.Master.vb">
+      <DependentUpon>app.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\empty\empty.Master.designer.vb">
+      <DependentUpon>empty.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\empty\empty.Master.vb">
+      <DependentUpon>empty.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\main\main.Master.designer.vb">
+      <DependentUpon>main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\main\main.Master.vb">
+      <DependentUpon>main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Classes\Users.vb" />
@@ -433,12 +775,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Site.Mobile.Master.vb">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    <Compile Include="template\main\main.Mobile.Master.vb">
+      <DependentUpon>main.Mobile.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Mobile.Master.designer.vb">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    <Compile Include="template\main\main.Mobile.Master.designer.vb">
+      <DependentUpon>main.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Page\Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -455,6 +797,16 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\index.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>index.en.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\index.ru.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>index.ru.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -466,8 +818,8 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <Content Include="Site.Master" />
-    <Content Include="Site.Mobile.Master" />
+    <Content Include="template\main\main.Master" />
+    <Content Include="template\main\main.Mobile.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
@@ -482,6 +834,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="template\app\app.Master" />
+    <Content Include="template\empty\empty.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -492,6 +846,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_Themes\" />
+    <Folder Include="Page\auth\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

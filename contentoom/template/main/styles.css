@@ -1,0 +1,204 @@
+﻿@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url('/fonts/roboto/Roboto.woff2') format('woff2'), url('/fonts/roboto/Roboto.woff') format('woff'), url('/fonts/roboto/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), url('/fonts/roboto/Robotoitalic.woff2') format('woff2'), url('/fonts/roboto/Robotoitalic.woff') format('woff'), url('/fonts/roboto/Robotoitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), url('/fonts/roboto/Robotobold.woff2') format('woff2'), url('/fonts/roboto/Robotobold.woff') format('woff'), url('/fonts/roboto/Robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold Italic'), url('/fonts/roboto/Robotobolditalic.woff2') format('woff2'), url('/fonts/roboto/Robotobolditalic.woff') format('woff'), url('/fonts/roboto/Robotobolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed'), url('/fonts/roboto-condensed/Robotocondensed.woff2') format('woff2'), url('/fonts/roboto-condensed/Robotocondensed.woff') format('woff'), url('/fonts/roboto-condensed/Robotocondensed.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Italic'), url('/fonts/roboto-condensed/Robotocondenseditalic.woff2') format('woff2'), url('/fonts/roboto-condensed/Robotocondenseditalic.woff') format('woff'), url('/fonts/roboto-condensed/Robotocondenseditalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('Robotocondensedbold.woff2') format('woff2'), url('Robotocondensedbold.woff') format('woff'), url('Robotocondensedbold.ttf') format('truetype');
+    src: local('Roboto Condensed Bold'), url('/fonts/roboto-condensed/Robotocondensedbold.woff2') format('woff2'), url('/fonts/roboto-condensed/Robotocondensedbold.woff') format('woff'), url('/fonts/roboto-condensed/Robotocondensedbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold Italic'), url('/fonts/roboto-condensed/Robotocondensedbolditalic.woff2') format('woff2'), url('/fonts/roboto-condensed/Robotocondensedbolditalic.woff') format('woff'), url('/fonts/roboto-condensed/Robotocondensedbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+html {
+    font-family: Roboto, Arial, sans-serif;
+    color: #54657E;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', Tahoma, sans-serif;
+    font-weight: 400;
+    color: #3D4D65;
+}
+
+a {
+    color: #0081D5;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #D2335B;
+    }
+
+    a.logo {
+        color: #3D4D65;
+        text-decoration: none;
+    }
+
+input {
+    color: #8493A8;
+}
+
+a.button {
+    display: inline-block;
+    color: #fff;
+    padding: 16px 16px;
+    border: 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: center;
+}
+
+    a.button:active {
+        -webkit-box-shadow: inset 0,0,0px 2,2,2px 1,0,1px #000000,#000000,#000000;
+        -moz-box-shadow: inset 0px 2px 0px #000000;
+        box-shadow: inset 0px 2px 0px #000000;
+    }
+
+a.signin {
+    background-color: #D1335B;
+    width: 150px;
+}
+
+    a.signin:hover {
+        background-color: #D74B6E;
+    }
+
+    a.signin:active {
+        background-color: #BC2A4E;
+    }
+
+a.login {
+    background-color: #03BD5B;
+}
+
+    a.login:hover {
+        background-color: #D74B6E;
+    }
+
+    a.login:active {
+        background-color: #BC2A4E;
+    }
+
+a.registration {
+    background-color: #FF9947;
+}
+
+a.confirm {
+    background-color: #9DBF15;
+}
+
+a.cancel {
+    background-color: #D1335B;
+}
+
+input[type="text"],
+input[type="password"] {
+    color: #8493A8;
+    background: #ECEFF4 !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: 1px solid #cccccc;
+    height: 45px;
+    font-size: 16px;
+    padding: 0px 16px;
+}
+
+    input[type="text"]:hover,
+    input[type="password"]:hover {
+        border: 1px solid #8493A7;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        color: #54657E;
+        background: #fff !important;
+        border: 1px solid #0081D5 !important;
+    }
+
+.input-450 {
+    width: 84px;
+}
+
+.input-450 {
+    width: 530px;
+}
+
+select {
+    color: #8493A8;
+    background: #ECEFF4 !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: 1px solid #cccccc;
+    height: 45px;
+    font-size: 16px;
+    padding: 0px 16px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+    select:focus {
+        color: #54657E;
+        background: #EBEFF3 !important;
+        border: 1px solid #8493A7 !important;
+    }
+
+option {
+    height: 45px;
+}
+
+ul {
+    padding: 0;
+}

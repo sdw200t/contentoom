@@ -1,0 +1,94 @@
+﻿.header-body {
+    height: 70px;
+    max-height: 70px;
+    width: 1170px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo, .menu, .sedi_buttons, .logoimg, .logotxt {
+    display: inline-block;
+}
+
+.logoimg {
+    margin-right: 8px;
+}
+
+.logotxt {
+    vertical-align: super;
+}
+
+.logo {
+    width: 250px;
+    text-align: left;
+}
+
+.menu {
+    width: 640px;
+    text-align: center;
+}
+
+.sedi_buttons {
+    width: 280px;
+    text-align: right;
+}
+
+.header, .footer, .workarea {
+    text-align: center;
+}
+
+.workarea {
+}
+
+.workarea-body {
+    display: inline-flex;
+    width: 1170px;
+    height: calc(100vh - 255px);
+    padding: 20px 0px;
+}
+
+.footer {
+    /*	position : fixed;*/
+    height: 50px;
+    bottom: 0;
+}
+
+/*МЕНЮ ВЕРХ*/
+.top_menu_elem {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.menu_block_elem,
+.menu_block_elem_set {
+    display: inline;
+    float: inline-start;
+    padding: 0;
+    height: 30px;
+}
+
+    .menu_block_elem > a {
+        color: #54657E;
+    }
+
+    .menu_block_elem_set > a {
+        color: #0081D5;
+    }
+
+    .menu_block_elem > a,
+    .menu_block_elem_set > a {
+        padding: 19px 10px;
+    }
+
+    .menu_block_elem:hover,
+    .menu_block_elem_set:hover {
+        border-bottom: 2px solid #0082D5;
+    }
+
+    .menu_block_elem > a:hover,
+    .menu_block_elem_set > a:hover {
+        color: #0081D5;
+    }

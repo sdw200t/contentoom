@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Монтажная-область2" serif:id="Монтажная область2" transform="matrix(2.38776,0,0,2.90817,1100.34,1141.33)">
+        <rect x="-460.826" y="-392.457" width="214.427" height="176.055" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="-460.826" y="-392.457" width="214.427" height="176.055"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(0.818312,0,0,0.821957,-490.867,-426.479)">
+                <rect x="36.711" y="41.391" width="262.035" height="214.609" style="fill:url(#_Linear2);"/>
+            </g>
+            <g transform="matrix(0.965926,-0.212504,0.315228,0.965926,86.8217,-82.0499)">
+                <g transform="matrix(0.461557,0,0,0.378962,-465.344,-369.568)">
+                    <text x="66.077px" y="182.574px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:97.827px;fill:white;">COVER</text>
+                </g>
+                <g transform="matrix(0.446355,0,0,0.361175,-463.769,-396.111)">
+                    <rect x="32.193" y="149.819" width="429.196" height="156.995" style="fill:none;stroke:white;stroke-width:16.13px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(262.035,0,0,214.609,36.7106,148.696)"><stop offset="0" style="stop-color:rgb(161,51,213);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(215,63,89);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
