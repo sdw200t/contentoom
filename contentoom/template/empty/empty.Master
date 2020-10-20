@@ -5,16 +5,18 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="/template/empty/styles.css">
+	<link rel="stylesheet" href="/template/empty/template_styles.css">
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolderEmpty" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
-    </form>
 </body>
 </html>

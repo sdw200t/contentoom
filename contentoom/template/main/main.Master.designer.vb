@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class TemplateMain
 
     '''<summary>
+    '''title элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents title As Global.System.Web.UI.WebControls.ContentPlaceHolder
+
+    '''<summary>
     '''head элемент управления.
     '''</summary>
     '''<remarks>

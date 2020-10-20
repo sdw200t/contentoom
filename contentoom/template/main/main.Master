@@ -28,9 +28,11 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>
-			<asp:ContentPlaceHolder ID="head" runat="server">
+			<asp:ContentPlaceHolder ID="title" runat="server">
 			</asp:ContentPlaceHolder>
 		</title>
+		<asp:ContentPlaceHolder ID="head" runat="server">
+		</asp:ContentPlaceHolder>
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/template/main/styles.css">
 		<link rel="stylesheet" href="/template/main/template_styles.css">
@@ -49,7 +51,7 @@
 							<!-- first level-->
 								<li class="menu_block_elem">
 									<a href="/">
-										ГЛАВНАЯ
+										ГЛАВНАЯ @Resources.index.home
 									</a>
 								</li>
 							<!-- first level-->
@@ -75,11 +77,14 @@
 				</div>
 				<div class="sedi_buttons">
 					
-						<select name="Lang" class="ui-ctl-element" onchange="action_lang()">
-							<option value="ru">RU</option>
-							<option value="en">EN</option>
-						</select>
-						<input type="hidden" name="siteparams" value="lang_ui=">
+						@using (Html.BeginForm("ChangeCulture", "Home"))
+						{ 
+							<select name="lang">
+								<option value="ru">Русский</option>
+								<option value="en">English</option>
+						   </select>
+							<input type="submit" name="submit" value="@Resources.Resource.ChooseLang">
+						}
 						<a href="/page/app/audio-release/list.aspx" class="button signin">ВОЙТИ</a>
 				</div>
 
