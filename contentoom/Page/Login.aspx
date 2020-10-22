@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Login" Language="vb" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Login.aspx.vb" Inherits="contentoom.Login" %>
+﻿<%@ Page Title="Login" Language="vb" AutoEventWireup="true" MasterPageFile="~/template/app/app.Master" CodeBehind="Login.aspx.vb" Inherits="contentoom.Login" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolderApp" runat="server">
  
     <div class ="Table">
         <div class="row">

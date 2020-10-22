@@ -535,6 +535,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Page\Registration.aspx" />
+    <Content Include="Page\TestCapcha.aspx" />
     <Content Include="Page\TestDrop.aspx" />
     <Content Include="Page\TestFTP.aspx" />
     <Content Include="Page\index.aspx" />
@@ -900,6 +901,13 @@
     </Compile>
     <Compile Include="Page\Registration.aspx.vb">
       <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Page\TestCapcha.aspx.designer.vb">
+      <DependentUpon>TestCapcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TestCapcha.aspx.vb">
+      <DependentUpon>TestCapcha.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Page\TestDrop.aspx.designer.vb">

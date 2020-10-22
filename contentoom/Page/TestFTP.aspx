@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="TestFTP.aspx.vb" Inherits="contentoom.TestFTP" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/template/app/app.Master" CodeBehind="TestFTP.aspx.vb" Inherits="contentoom.TestFTP" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderApp" runat="server">
 
     <input id="File1" type="file" runat="server"/>
     <input type="button" 

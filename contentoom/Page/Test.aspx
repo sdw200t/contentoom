@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Home Page" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Test.aspx.vb" Inherits="contentoom._Default" EnableSessionState="True" %>
+﻿<%@ Page Title="Home Page" Language="VB" MasterPageFile="~/template/app/app.Master" AutoEventWireup="true" CodeBehind="Test.aspx.vb" Inherits="contentoom._Default" EnableSessionState="True" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolderApp" runat="server">
 
     <%-- драг дроп перетаскивание элементов списка --%>
     <script src="/scripts/jquery-3.5.1.min.js"></script>

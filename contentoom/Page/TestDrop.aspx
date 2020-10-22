@@ -1,7 +1,14 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="True" MasterPageFile="~/Site.Master" CodeBehind="TestDrop.aspx.vb" Inherits="contentoom.TestDrop" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/template/app/app.Master" CodeBehind="TestDrop.aspx.vb" Inherits="contentoom.TestDrop" %>
 <%@Register Assembly="BotDetect" Namespace="BotDetect.Web.UI" TagPrefix="BotDetect" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderApp" runat="server">
 
    <%-- драг дроп перетаскивание элементов списка --%>
     <script src="/scripts/jquery-3.5.1.min.js"></script>
@@ -177,4 +184,4 @@
     </script>
     <%-- captcha --%>
 
-</asp:Content>
+    </span></asp:Content>
