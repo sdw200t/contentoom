@@ -5,61 +5,38 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderEmpty" runat="server">
-	<div class="bx-authform">
-
-		<h3 class="bx-title">ЗАГОЛОВОК</h3>
-
-		<form name="bform" method="post" target="_top" action="action_url">
-
-			<div class="bx-authform-formgroup-container">
-				<div class="bx-authform-label-container">Логин</div>
-				<div class="bx-authform-input-container">
-					<input type="text" name="login" maxlength="255" value="ласт логин" />
-				</div>
+    <div class="auth-area">
+		<div class="authform">
+	
+			<div class="auth_logo_m botmarg37">
+    			<img src="/img/logo-height.png">
 			</div>
+	
+	
+			<h3 class="title">Выслать контрольную строку</h3>
 
-			<div class="bx-authform-formgroup-container">
-				<div class="bx-authform-label-container">Проверка</div>
-				<div class="bx-authform-input-container">
-					<input type="text" name="checkword" maxlength="255" value="checkword" />
+			<p class="authform-content-container">Если вы забыли пароль, введите E-Mail. Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.</p>
+		
+				<div class="bx-authform-formgroup-container botmarg17">
+					<div class="elem_name">E-Mail</div>
+					<input type="text" name="USER_EMAIL" class="input_text W400" maxlength="255">
 				</div>
-			</div>
-
-			<div class="bx-authform-formgroup-container">
-				<div class="bx-authform-label-container">Пароль</div>
-				<div class="bx-authform-input-container">
-					<input type="password" name="password" value="password" maxlength="255" autocomplete="off" />
+		
+				<div class="bx-authform-formgroup-container botmarg17">
+					<input type="submit" class="btn green" name="AUTH_ACTION" value="ВЫСЛАТЬ">
 				</div>
-			</div>
-
-			<div class="bx-authform-formgroup-container">
-				<div class="bx-authform-label-container">password2</div>
-				<div class="bx-authform-input-container">
-					<input type="password" name="confirm_password" value="confirm_password" maxlength="255" autocomplete="off" />
-				</div>
-			</div>
-
-
-				<input type="hidden" name="captcha_sid" value="CAPTCHA_CODE" />
-				<div class="bx-authform-formgroup-container dbg_captha">
-					<div class="bx-authform-label-container">
-						Введите проверочную строку
+		
+				<noindex>
+					<div class="auth_btn">
+						<div>
+							<a href="/page/auth/login.aspx" rel="nofollow">Авторизоваться</a>
+			  			</div>
+			  			<div>
+							<a href="/page/auth/registration.aspx" rel="nofollow">Зарегистрироваться</a>
+			 			</div>
 					</div>
-					<div class="bx-captcha">картинка с капчей</div>
-					<div class="bx-authform-input-container">
-						<input type="text" name="captcha_word" maxlength="50" value="" autocomplete="off" />
-					</div>
-				</div>
+				</noindex>
 
-
-			<div class="bx-authform-formgroup-container">
-				<input type="submit" class="btn btn-primary" name="action" value="Отправить" />
-			</div>
-
-			<div class="bx-authform-description-container">
-			
-			</div>
-
-		</form>
+		</div>
 	</div>
 </asp:Content>

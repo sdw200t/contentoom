@@ -532,7 +532,7 @@ ul {
     margin: auto;
 }
 
-.bx-authform {
+.authform {
     width: 450px !important;
     margin: auto;
     padding: 17px;
@@ -552,4 +552,10 @@ ul {
 
 .auth_logo_m {
     text-align: center;
+}
+
+.authform-content-container {
+    font-size: 13px;
+    color: #5a6c77;
+    padding-bottom: 2px;
 }

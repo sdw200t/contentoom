@@ -1,4 +1,4 @@
-﻿Public Class registration1
+﻿Public Class authRegistration
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load

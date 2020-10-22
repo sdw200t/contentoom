@@ -11,5 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class authIndex
+Partial Public Class authLogin
 End Class

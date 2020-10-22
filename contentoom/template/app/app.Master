@@ -49,7 +49,7 @@
 				<div class="left_menu">
 <!--					Все релизы-->
 					<div class="menu_item_app">
-						<a href="#" class="menu_item_a">
+						<a href="#" class="menu_item_a_blocked" title="не доступно">
 							<div>
 								<img class="menu_item_img" src="/img/ico/menu_ico_all.svg">
 							</div>
@@ -60,7 +60,7 @@
 					</div>
 <!--					Аудио релизы-->
 					<div class="menu_item_app">
-						<a href="/app/audio-release/my-release-list.php" class="menu_item_a">
+						<a href="/page/app/audio-release/list.aspx" class="menu_item_a">
 							<div>
 								<img class="menu_item_img" src="/img/ico/menu_ico_audio.svg">
 							</div>
@@ -96,7 +96,7 @@
 				<div class="bot_menu">
 <!--					Список пользователей-->
 					<div class="menu_item_app">
-						<a href="/app/user/list.php" class="menu_item_a">
+						<a href="/page/app/user/list.aspx" class="menu_item_a">
 							<div>
 								<img class="menu_item_img" src="/img/ico/menu_ico_userlist.svg">
 							</div>
@@ -107,7 +107,7 @@
 					</div>
 <!--					Профиль-->
 					<div class="menu_item_app">
-						<a href="/app/user/profile-view.php" class="menu_item_a">
+						<a href="/page/app/user/profile-view.aspx" class="menu_item_a">
 							<div>
 								<img class="menu_item_img" src="/img/ico/menu_ico_profile.svg">
 							</div>
