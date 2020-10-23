@@ -54,7 +54,7 @@
 								<img class="menu_item_img" src="/img/ico/menu_ico_all.svg">
 							</div>
 							<div class="menu_item_txt">
-								Все релизы
+								<asp:Label ID="Label1" runat="server" Text="Label" meta:resourcekey="menu_allRelease"></asp:Label>
 							</div>
 						</a>
 					</div>

@@ -11,25 +11,25 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class TemplateApp
+Partial Public Class testLanguage
 
     '''<summary>
-    '''title элемент управления.
+    '''DropDownList1 элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents title As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''head элемент управления.
+    '''Button1 элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Label1 элемент управления.
@@ -39,13 +39,4 @@ Partial Public Class TemplateApp
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''ContentPlaceHolderApp элемент управления.
-    '''</summary>
-    '''<remarks>
-    '''Автоматически создаваемое поле.
-    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-    '''</remarks>
-    Protected WithEvents ContentPlaceHolderApp As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

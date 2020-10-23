@@ -1,5 +1,7 @@
 ﻿Imports System.Web
 Imports System.Web.UI
+Imports System.Globalization
+
 Public Class language
     Implements IHttpModule
 
@@ -25,9 +27,15 @@ Public Class language
 #End Region
 
     Public Sub OnLogRequest(ByVal source As Object, ByVal e As EventArgs) Handles _context.LogRequest
-
         ' Обработка события LogRequest и настраиваемая реализация 
         ' занесения данных
+    End Sub
 
+    Public Sub page_PreInit(sender As Object, e As EventArgs) Handles _context.BeginRequest
+        If (Not HttpContext.Current.Session("culture") = Nothing) Then
+            Dim culture = HttpContext.Current.Session("culture").ToString()
+            System.Threading.Thread.CurrentThread.CurrentCulture = New CultureInfo(culture)
+            System.Threading.Thread.CurrentThread.CurrentUICulture = New CultureInfo(culture)
+        End If
     End Sub
 End Class
