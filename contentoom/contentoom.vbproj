@@ -964,6 +964,13 @@
     </Compile>
     <Compile Include="Classes\Users.vb" />
     <Compile Include="Classes\GroupUsers.vb" />
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -993,6 +1000,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Content Include="Page\app\audio-release\App_LocalResources\main.aspx.resx" />
     <EmbeddedResource Include="Resources\index.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>index.en.Designer.vb</LastGenOutput>
@@ -1032,6 +1040,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="template\app\app.Master" />
     <Content Include="template\empty\empty.Master" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

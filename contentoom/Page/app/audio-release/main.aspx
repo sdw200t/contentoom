@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/template/app/app.Master" CodeBehind="main.aspx.vb" Inherits="contentoom.AudioReleaseMain" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/template/app/app.Master" CodeBehind="main.aspx.vb" Inherits="contentoom.AudioReleaseMain" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
     Данные аудио релиза

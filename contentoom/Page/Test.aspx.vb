@@ -12,7 +12,6 @@ Public Class _Default
     '    Dim url As String = "https://www.google.com/recaptcha/api/siteverify?secret=" & ReCaptcha_Secret & "&response=" & response
     '    Return (New WebClient()).DownloadString(url)
     'End Function
-
     Private Sub _Default_Load(sender As Object, e As EventArgs) Handles Me.Load
         tEnterUser.Visible = True
         tNewUser.Visible = False
