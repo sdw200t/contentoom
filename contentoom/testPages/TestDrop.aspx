@@ -161,7 +161,7 @@
         <asp:TextBox ID="CaptchaCodeTextBox" runat="server" />
         <input id="btnCheckOnBot" type="button" value="Проверка капчи" onclick="CheckOnBot()" />
 
-        <script>
+<%--        <script>
             function CheckOnBot() {
                 If(IsPostBack) Then
                 {
@@ -182,7 +182,7 @@
                     }
                 }
             }
-        </script>
+        </script>--%>
         <%-- captcha --%>
 
     </span>

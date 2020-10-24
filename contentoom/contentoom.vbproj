@@ -501,28 +501,26 @@
     <Content Include="img\region\southAmerica\Trinidad And Tobago TT.gif" />
     <Content Include="img\region\southAmerica\Uruguay UY.gif" />
     <Content Include="img\region\southAmerica\Venezuela VE.gif" />
-    <Content Include="Page\About.aspx" />
-    <Content Include="Page\app\audio-release\check.aspx" />
-    <Content Include="Page\app\audio-release\files.aspx" />
-    <Content Include="Page\app\audio-release\list.aspx" />
-    <Content Include="Page\app\audio-release\main.aspx" />
-    <Content Include="Page\app\audio-release\meta-info.aspx" />
-    <Content Include="Page\app\audio-release\metadata.aspx" />
-    <Content Include="Page\app\audio-release\promo.aspx" />
-    <Content Include="Page\app\audio-release\ready.aspx" />
-    <Content Include="Page\app\audio-release\regions.aspx" />
-    <Content Include="Page\app\user\licdoc.aspx" />
-    <Content Include="Page\app\user\list-user-view.aspx" />
-    <Content Include="Page\app\user\list.aspx" />
-    <Content Include="Page\app\user\profile-edit.aspx" />
-    <Content Include="Page\app\user\profile-view.aspx" />
-    <Content Include="Page\auth\index.aspx" />
-    <Content Include="Page\auth\login.aspx" />
-    <Content Include="Page\auth\personal-agreement.aspx" />
-    <Content Include="Page\auth\registration.aspx" />
-    <Content Include="Page\auth\restore-password.aspx" />
-    <Content Include="Page\auth\terms-of-use.aspx" />
-    <Content Include="Page\Contact.aspx" />
+    <Content Include="Pages\app\audio-release\check.aspx" />
+    <Content Include="Pages\app\audio-release\files.aspx" />
+    <Content Include="Pages\app\audio-release\list.aspx" />
+    <Content Include="Pages\app\audio-release\main.aspx" />
+    <Content Include="Pages\app\audio-release\meta-info.aspx" />
+    <Content Include="Pages\app\audio-release\metadata.aspx" />
+    <Content Include="Pages\app\audio-release\promo.aspx" />
+    <Content Include="Pages\app\audio-release\ready.aspx" />
+    <Content Include="Pages\app\audio-release\regions.aspx" />
+    <Content Include="Pages\app\user\licdoc.aspx" />
+    <Content Include="Pages\app\user\list-user-view.aspx" />
+    <Content Include="Pages\app\user\list.aspx" />
+    <Content Include="Pages\app\user\profile-edit.aspx" />
+    <Content Include="Pages\app\user\profile-view.aspx" />
+    <Content Include="Pages\auth\index.aspx" />
+    <Content Include="Pages\auth\login.aspx" />
+    <Content Include="Pages\auth\personal-agreement.aspx" />
+    <Content Include="Pages\auth\registration.aspx" />
+    <Content Include="Pages\auth\restore-password.aspx" />
+    <Content Include="Pages\auth\terms-of-use.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -530,16 +528,13 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Page\Default.aspx" />
-    <Content Include="Page\Test.aspx" />
+    <Content Include="testPages\Test.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Page\Registration.aspx" />
-    <Content Include="Page\TestCapcha.aspx" />
-    <Content Include="Page\TestDrop.aspx" />
-    <Content Include="Page\TestFTP.aspx" />
-    <Content Include="Page\index.aspx" />
-    <Content Include="Page\testLanguage.aspx" />
+    <Content Include="testPages\TestCapcha.aspx" />
+    <Content Include="testPages\TestDrop.aspx" />
+    <Content Include="testPages\TestFTP.aspx" />
+    <Content Include="testPages\testLanguage.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -564,7 +559,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="libman.json" />
-    <Content Include="Page\Login.aspx" />
     <Content Include="fonts\roboto-condensed\Robotocondensed.ttf" />
     <Content Include="fonts\roboto-condensed\Robotocondensed.woff" />
     <Content Include="fonts\roboto-condensed\Robotocondensed.woff2" />
@@ -703,176 +697,155 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Filters\CultureAttribute.vb" />
     <Compile Include="language.vb" />
-    <Compile Include="Page\About.aspx.designer.vb">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page\About.aspx.vb">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Classes\LogTxt.vb" />
     <Compile Include="Classes\MailSender.vb" />
     <Compile Include="Classes\RegexUtilities.vb" />
-    <Compile Include="Page\app\audio-release\check.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\check.aspx.designer.vb">
       <DependentUpon>check.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\check.aspx.vb">
+    <Compile Include="Pages\app\audio-release\check.aspx.vb">
       <DependentUpon>check.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\audio-release\files.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\files.aspx.designer.vb">
       <DependentUpon>files.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\files.aspx.vb">
+    <Compile Include="Pages\app\audio-release\files.aspx.vb">
       <DependentUpon>files.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\audio-release\list.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\list.aspx.designer.vb">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\list.aspx.vb">
+    <Compile Include="Pages\app\audio-release\list.aspx.vb">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\audio-release\main.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\main.aspx.designer.vb">
       <DependentUpon>main.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\main.aspx.vb">
+    <Compile Include="Pages\app\audio-release\main.aspx.vb">
       <DependentUpon>main.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\audio-release\meta-info.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\meta-info.aspx.designer.vb">
       <DependentUpon>meta-info.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\meta-info.aspx.vb">
+    <Compile Include="Pages\app\audio-release\meta-info.aspx.vb">
       <DependentUpon>meta-info.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\audio-release\metadata.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\metadata.aspx.designer.vb">
       <DependentUpon>metadata.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\metadata.aspx.vb">
+    <Compile Include="Pages\app\audio-release\metadata.aspx.vb">
       <DependentUpon>metadata.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\audio-release\promo.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\promo.aspx.designer.vb">
       <DependentUpon>promo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\promo.aspx.vb">
+    <Compile Include="Pages\app\audio-release\promo.aspx.vb">
       <DependentUpon>promo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\audio-release\ready.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\ready.aspx.designer.vb">
       <DependentUpon>ready.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\ready.aspx.vb">
+    <Compile Include="Pages\app\audio-release\ready.aspx.vb">
       <DependentUpon>ready.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\audio-release\regions.aspx.designer.vb">
+    <Compile Include="Pages\app\audio-release\regions.aspx.designer.vb">
       <DependentUpon>regions.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\audio-release\regions.aspx.vb">
+    <Compile Include="Pages\app\audio-release\regions.aspx.vb">
       <DependentUpon>regions.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\user\licdoc.aspx.designer.vb">
+    <Compile Include="Pages\app\user\licdoc.aspx.designer.vb">
       <DependentUpon>licdoc.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\user\licdoc.aspx.vb">
+    <Compile Include="Pages\app\user\licdoc.aspx.vb">
       <DependentUpon>licdoc.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\user\list-user-view.aspx.designer.vb">
+    <Compile Include="Pages\app\user\list-user-view.aspx.designer.vb">
       <DependentUpon>list-user-view.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\user\list-user-view.aspx.vb">
+    <Compile Include="Pages\app\user\list-user-view.aspx.vb">
       <DependentUpon>list-user-view.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\user\list.aspx.designer.vb">
+    <Compile Include="Pages\app\user\list.aspx.designer.vb">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\user\list.aspx.vb">
+    <Compile Include="Pages\app\user\list.aspx.vb">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\user\profile-edit.aspx.designer.vb">
+    <Compile Include="Pages\app\user\profile-edit.aspx.designer.vb">
       <DependentUpon>profile-edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\user\profile-edit.aspx.vb">
+    <Compile Include="Pages\app\user\profile-edit.aspx.vb">
       <DependentUpon>profile-edit.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\app\user\profile-view.aspx.designer.vb">
+    <Compile Include="Pages\app\user\profile-view.aspx.designer.vb">
       <DependentUpon>profile-view.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\app\user\profile-view.aspx.vb">
+    <Compile Include="Pages\app\user\profile-view.aspx.vb">
       <DependentUpon>profile-view.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\auth\index.aspx.designer.vb">
+    <Compile Include="Pages\auth\index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\auth\index.aspx.vb">
+    <Compile Include="Pages\auth\index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\auth\login.aspx.designer.vb">
+    <Compile Include="Pages\auth\login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\auth\login.aspx.vb">
+    <Compile Include="Pages\auth\login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\auth\personal-agreement.aspx.designer.vb">
+    <Compile Include="Pages\auth\personal-agreement.aspx.designer.vb">
       <DependentUpon>personal-agreement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\auth\personal-agreement.aspx.vb">
+    <Compile Include="Pages\auth\personal-agreement.aspx.vb">
       <DependentUpon>personal-agreement.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\auth\registration.aspx.designer.vb">
+    <Compile Include="Pages\auth\registration.aspx.designer.vb">
       <DependentUpon>registration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\auth\registration.aspx.vb">
+    <Compile Include="Pages\auth\registration.aspx.vb">
       <DependentUpon>registration.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\auth\restore-password.aspx.designer.vb">
+    <Compile Include="Pages\auth\restore-password.aspx.designer.vb">
       <DependentUpon>restore-password.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\auth\restore-password.aspx.vb">
+    <Compile Include="Pages\auth\restore-password.aspx.vb">
       <DependentUpon>restore-password.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\auth\terms-of-use.aspx.designer.vb">
+    <Compile Include="Pages\auth\terms-of-use.aspx.designer.vb">
       <DependentUpon>terms-of-use.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\auth\terms-of-use.aspx.vb">
+    <Compile Include="Pages\auth\terms-of-use.aspx.vb">
       <DependentUpon>terms-of-use.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Page\Contact.aspx.designer.vb">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Contact.aspx.vb">
-      <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Classes\DataBase.vb" />
-    <Compile Include="Page\Default.aspx.designer.vb">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Default.aspx.vb">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Page\Test.aspx.vb">
+    <Compile Include="testPages\Test.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\Test.aspx.designer.vb">
+    <Compile Include="testPages\Test.aspx.designer.vb">
       <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.vb">
@@ -897,45 +870,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Page\Registration.aspx.designer.vb">
-      <DependentUpon>Registration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Registration.aspx.vb">
-      <DependentUpon>Registration.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Page\TestCapcha.aspx.designer.vb">
+    <Compile Include="testPages\TestCapcha.aspx.designer.vb">
       <DependentUpon>TestCapcha.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\TestCapcha.aspx.vb">
+    <Compile Include="testPages\TestCapcha.aspx.vb">
       <DependentUpon>TestCapcha.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\TestDrop.aspx.designer.vb">
+    <Compile Include="testPages\TestDrop.aspx.designer.vb">
       <DependentUpon>TestDrop.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\TestDrop.aspx.vb">
+    <Compile Include="testPages\TestDrop.aspx.vb">
       <DependentUpon>TestDrop.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\TestFTP.aspx.designer.vb">
+    <Compile Include="testPages\TestFTP.aspx.designer.vb">
       <DependentUpon>TestFTP.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\TestFTP.aspx.vb">
+    <Compile Include="testPages\TestFTP.aspx.vb">
       <DependentUpon>TestFTP.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Page\index.aspx.designer.vb">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page\index.aspx.vb">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Page\testLanguage.aspx.designer.vb">
+    <Compile Include="testPages\testLanguage.aspx.designer.vb">
       <DependentUpon>testLanguage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page\testLanguage.aspx.vb">
+    <Compile Include="testPages\testLanguage.aspx.vb">
       <DependentUpon>testLanguage.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -993,13 +952,6 @@
     <Compile Include="template\main\main.Mobile.Master.designer.vb">
       <DependentUpon>main.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="Page\Login.aspx.designer.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Login.aspx.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -1008,10 +960,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Content Include="Page\app\audio-release\App_LocalResources\main.aspx.resx" />
-    <Content Include="Page\App_LocalResources\testLanguage.aspx.resx" />
-    <Content Include="Page\App_LocalResources\testLanguage.aspx.en.resx" />
-    <Content Include="Page\app\audio-release\App_LocalResources\main.aspx.en.resx" />
+    <Content Include="Pages\app\audio-release\App_LocalResources\main.aspx.resx" />
+    <Content Include="Pages\App_LocalResources\testLanguage.aspx.resx" />
+    <Content Include="Pages\App_LocalResources\testLanguage.aspx.en.resx" />
+    <Content Include="Pages\app\audio-release\App_LocalResources\main.aspx.en.resx" />
     <EmbeddedResource Include="Resources\index.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>index.en.Designer.vb</LastGenOutput>
