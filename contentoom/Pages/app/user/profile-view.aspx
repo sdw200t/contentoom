@@ -133,10 +133,10 @@
         <div class="botmarg17">
             <h2 id="doc" style="padding-top: 66px; margin-top: -66px;">ЛИЦЕНЗИОННЫЙ ДОГОВОР</h2>
         </div>
-        <div class="botmarg17">Подписан, <a href="/page/app/user/licdoc.aspx">посмотреть</a></div>
+        <div class="botmarg17">Подписан, <a href="/pages/app/user/licdoc.aspx">посмотреть</a></div>
 
         <div class="release_button_block flexim">
-            <a href="/page/app/user/profile-edit.aspx" class="button apply">РЕДАКТИРОВАТЬ</a>
+            <a href="/pages/app/user/profile-edit.aspx" class="button apply">РЕДАКТИРОВАТЬ</a>
         </div>
 
 </asp:Content>

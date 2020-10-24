@@ -58,7 +58,7 @@
                         <th></th>
                         <th>2020.05.05</th>
                         <th></th>
-                        <th><a href="/page/app/user/list-user-view.aspx">Подробнее</a></th>
+                        <th><a href="/pages/app/user/list-user-view.aspx">Подробнее</a></th>
                     </tr>
                     <tr role="row" class="even">
                         <th class="sorting_1">3</th>
@@ -67,7 +67,7 @@
                         <th></th>
                         <th>2020.05.11</th>
                         <th></th>
-                        <th><a href="/page/app/user/list-user-view.aspx">Подробнее</a></th>
+                        <th><a href="/pages/app/user/list-user-view.aspx">Подробнее</a></th>
                     </tr>
                     <tr role="row" class="odd">
                         <th class="sorting_1">4</th>
@@ -76,7 +76,7 @@
                         <th>Физическое лицо</th>
                         <th>2020.06.17</th>
                         <th></th>
-                        <th><a href="/page/app/user/list-user-view.aspx">Подробнее</a></th>
+                        <th><a href="/pages/app/user/list-user-view.aspx">Подробнее</a></th>
                     </tr>
                     <tr role="row" class="even">
                         <th class="sorting_1">5</th>
@@ -85,7 +85,7 @@
                         <th>Физическое лицо</th>
                         <th>2020.06.17</th>
                         <th></th>
-                        <th><a href="/page/app/user/list-user-view.aspx">Подробнее</a></th>
+                        <th><a href="/pages/app/user/list-user-view.aspx">Подробнее</a></th>
                     </tr>
                     <tr role="row" class="odd">
                         <th class="sorting_1">6</th>
@@ -94,7 +94,7 @@
                         <th></th>
                         <th>2020.07.05</th>
                         <th></th>
-                        <th><a href="/page/app/user/list-user-view.aspx">Подробнее</a></th>
+                        <th><a href="/pages/app/user/list-user-view.aspx">Подробнее</a></th>
                     </tr>
                     <tr role="row" class="even">
                         <th class="sorting_1">7</th>
@@ -103,7 +103,7 @@
                         <th></th>
                         <th>2020.07.05</th>
                         <th></th>
-                        <th><a href="/page/app/user/list-user-view.aspx">Подробнее</a></th>
+                        <th><a href="/pages/app/user/list-user-view.aspx">Подробнее</a></th>
                     </tr>
                     <tr role="row" class="odd">
                         <th class="sorting_1">9</th>
@@ -112,7 +112,7 @@
                         <th></th>
                         <th>2020.07.30</th>
                         <th></th>
-                        <th><a href="/page/app/user/list-user-view.aspx">Подробнее</a></th>
+                        <th><a href="/pages/app/user/list-user-view.aspx">Подробнее</a></th>
                     </tr>
                     <tr role="row" class="even">
                         <th class="sorting_1">10</th>
@@ -121,7 +121,7 @@
                         <th></th>
                         <th>2020.09.17</th>
                         <th></th>
-                        <th><a href="/page/app/user/list-user-view.aspx">Подробнее</a></th>
+                        <th><a href="/pages/app/user/list-user-view.aspx">Подробнее</a></th>
                     </tr>
                 </tbody>
             </table>

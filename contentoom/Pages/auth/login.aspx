@@ -37,7 +37,7 @@
 	<!--			Забыли свой пароль?-->
 				<noindex>
 					<div class="auth_txt botmarg37">
-						<a href="/page/auth/restore-password.aspx" rel="nofollow">Забыли свой пароль?</a>
+						<a href="/pages/auth/restore-password.aspx" rel="nofollow">Забыли свой пароль?</a>
 					</div>
 				</noindex>
 			
@@ -46,7 +46,7 @@
 	<!--			Зарегестрироваться/Войти-->
 				<div class="auth_btn">
 					<div>
-						<a href="/page/auth/registration.aspx" rel="nofollow" class="button orange">ЗАРЕГЕСТРИРОВАТЬСЯ</a>
+						<a href="/pages/auth/registration.aspx" rel="nofollow" class="button orange">ЗАРЕГЕСТРИРОВАТЬСЯ</a>
 					</div>
 					<input type="submit" class="button green W160" name="AUTH_ACTION" value="ВОЙТИ">
 				</div>

@@ -23,7 +23,7 @@
                 <div style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255); background-blend-mode: normal; border-block-end: 0px none rgb(84, 101, 126); border-block-start: 0px none rgb(84, 101, 126); border: 0px none rgb(84, 101, 126); border-radius: 0px; border-collapse: separate; border-inline-end: 0px none rgb(84, 101, 126); border-inline-start: 0px none rgb(84, 101, 126); box-shadow: none; outline: rgb(84, 101, 126) none 0px; outline-offset: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow: visible; padding-block-end: 10px; padding-block-start: 0px; padding: 0px 0px 10px; padding-inline-end: 0px; padding-inline-start: 0px; box-sizing: border-box; width: 1000px; display: flex;" class="">
                     <!--Данные релиза-->
                     <div class="full_elem_menu">
-                        <a href="/page/app/audio-release/main.aspx">
+                        <a href="/pages/app/audio-release/main.aspx">
                             <div class="elem_menu">
                                 Данные релиза					
                             </div>
@@ -31,7 +31,7 @@
                     </div>
                     <!--Аудио файлы фонограмм-->
                     <div class="full_elem_menu">
-                        <a href="/page/app/audio-release/files.aspx">
+                        <a href="/pages/app/audio-release/files.aspx">
                             <div class="elem_menu">
                                 Аудио файлы фонограмм					
                             </div>
@@ -39,7 +39,7 @@
                     </div>
                     <!--Метаданные фонограмм-->
                     <div class="full_elem_menu">
-                        <a href="/page/app/audio-release/metadata.aspx">
+                        <a href="/pages/app/audio-release/metadata.aspx">
                             <div class="elem_menu">
                                 Метаданные фонограмм					
                             </div>
@@ -47,7 +47,7 @@
                     </div>
                     <!--Регионы-->
                     <div class="full_elem_menu">
-                        <a href="/page/app/audio-release/regions.aspx">
+                        <a href="/pages/app/audio-release/regions.aspx">
                             <div class="elem_menu">
                                 Регионы					
                             </div>
@@ -55,7 +55,7 @@
                     </div>
                     <!--Промо-->
                     <div class="full_elem_menu">
-                        <a href="/page/app/audio-release/promo.aspx">
+                        <a href="/pages/app/audio-release/promo.aspx">
                             <div class="elem_menu">
                                 Промо					
                             </div>
@@ -63,7 +63,7 @@
                     </div>
                     <!--Готовность-->
                     <div class="full_elem_menu">
-                        <a href="/page/app/audio-release/ready.aspx">
+                        <a href="/pages/app/audio-release/ready.aspx">
                             <div class="elem_menu">
                                 Готовность					
                             </div>
@@ -71,7 +71,7 @@
                     </div>
                     <!--Проверка и отправка-->
                     <div class="full_elem_menu">
-                        <a href="/page/app/audio-release/check.aspx">
+                        <a href="/pages/app/audio-release/check.aspx">
                             <div class="elem_menu_active">
                                 Проверка и отправка					
                             </div>
@@ -740,7 +740,7 @@
 
                             $.ajax({
                                 type: "POST",
-                                url: "/page/app/audio-release/refresh-page/EditMassivForUser.aspx",
+                                url: "/pages/app/audio-release/refresh-page/EditMassivForUser.aspx",
                                 data: {
                                     "RELEASE_ID": 845,
                                     "ARR_SELECT": arrSelect,
@@ -752,7 +752,7 @@
 
                             $.ajax({
                                 type: "POST",
-                                url: "/page/app/audio-release/refresh-page/correcting.aspx",
+                                url: "/pages/app/audio-release/refresh-page/correcting.aspx",
                                 data: {
                                     "ReleaseID": 845,
                                     "UserID": 4,
@@ -776,7 +776,7 @@
                         $('#CreateDDEX').click(function () {
                             $.ajax({
                                 type: "POST",
-                                url: "/page/app/audio-release/refresh-page/create-ddex.aspx",
+                                url: "/pages/app/audio-release/refresh-page/create-ddex.aspx",
                                 data: { "ReleaseID": 845, "UserID": 4 },
                                 dataType: 'html',
                                 cache: false,
@@ -799,7 +799,7 @@
                         $('#CreateDDEX').click(function () {
                             $.ajax({
                                 type: "POST",
-                                url: "/page/app/audio-release/refresh-page/status-draft.aspx",
+                                url: "/pages/app/audio-release/refresh-page/status-draft.aspx",
                                 data: { "ReleaseID": 845 },
                                 dataType: 'html',
                                 cache: false,

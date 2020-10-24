@@ -22,7 +22,7 @@
             <div class="release_menu_top" id="release_menu_top">
                 <!--Данные релиза-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/main.aspx?edit=Y&amp;CODE=845&amp;lang_ui=ru">
+                    <a href="/pages/app/audio-release/main.aspx?edit=Y&amp;CODE=845&amp;lang_ui=ru">
                         <div class="elem_menu_active">
                             Данные релиза					
                         </div>
@@ -30,7 +30,7 @@
                 </div>
                 <!--Аудио файлы фонограмм-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/files.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
+                    <a href="/pages/app/audio-release/files.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
                         <div class="elem_menu">
                             Аудио файлы фонограмм					
                         </div>
@@ -38,7 +38,7 @@
                 </div>
                 <!--Метаданные фонограмм-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/metadata.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
+                    <a href="/pages/app/audio-release/metadata.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
                         <div class="elem_menu">
                             Метаданные фонограмм					
                         </div>
@@ -46,7 +46,7 @@
                 </div>
                 <!--Регионы-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/regions.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
+                    <a href="/pages/app/audio-release/regions.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
                         <div class="elem_menu">
                             Регионы					
                         </div>
@@ -54,7 +54,7 @@
                 </div>
                 <!--Промо-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/promo.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
+                    <a href="/pages/app/audio-release/promo.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
                         <div class="elem_menu">
                             Промо					
                         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <!--Готовность-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/ready.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
+                    <a href="/pages/app/audio-release/ready.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
                         <div class="elem_menu">
                             Готовность					
                         </div>
@@ -70,7 +70,7 @@
                 </div>
                 <!--Проверка и отправка-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/check.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
+                    <a href="/pages/app/audio-release/check.aspx?edit=Y&amp;CODE=845&amp;CREATED=4&amp;lang_ui=ru">
                         <div class="elem_menu">
                             Проверка и отправка					
                         </div>
@@ -236,7 +236,7 @@
                             $(document).ready(function () {
                                 $.ajax({
                                     type: "POST",
-                                    url: "/page/app/audio-release/refresh-page/save-artist-name.aspx",
+                                    url: "/pages/app/audio-release/refresh-page/save-artist-name.aspx",
                                     data: { "Artists": ["апр", "апруке", "йцуек", "Антон", "Антон", "sgg",], "UserID": 1, "NewArtist": document.getElementById("MainArtist_0").value },
                                     dataType: 'html',
                                     cache: false,
@@ -1133,7 +1133,7 @@
                         $(document).ready(function () {
                             $.ajax({
                                 type: "POST",
-                                url: "/page/app/audio-release/refresh-page/style-list.aspx",
+                                url: "/pages/app/audio-release/refresh-page/style-list.aspx",
                                 data: { "GenreID": document.getElementById("genre").value },
                                 dataType: 'html',
                                 cache: false,

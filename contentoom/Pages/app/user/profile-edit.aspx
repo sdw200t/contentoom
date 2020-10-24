@@ -977,7 +977,7 @@
 
 
             <div class="release_button_block flexim">
-                <a href="/page/app/user/profile-view.aspx" class="button cancel">ОТМЕНА</a>
+                <a href="/pages/app/user/profile-view.aspx" class="button cancel">ОТМЕНА</a>
                 <div class="button apply" onclick="SaveParam()">СОХРАНИТЬ</div>
 
             </div>

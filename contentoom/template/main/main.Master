@@ -85,7 +85,7 @@
 						   </select>
 							<input type="submit" name="submit" value="@Resources.Resource.ChooseLang">
 						}
-						<a href="/page/app/audio-release/list.aspx" class="button signin">ВОЙТИ</a>
+						<a href="/pages/app/audio-release/list.aspx" class="button signin">ВОЙТИ</a>
 				</div>
 
 			</div>

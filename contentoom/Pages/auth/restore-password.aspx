@@ -29,10 +29,10 @@
 				<noindex>
 					<div class="auth_btn">
 						<div>
-							<a href="/page/auth/login.aspx" rel="nofollow">Авторизоваться</a>
+							<a href="/pages/auth/login.aspx" rel="nofollow">Авторизоваться</a>
 			  			</div>
 			  			<div>
-							<a href="/page/auth/registration.aspx" rel="nofollow">Зарегистрироваться</a>
+							<a href="/pages/auth/registration.aspx" rel="nofollow">Зарегистрироваться</a>
 			 			</div>
 					</div>
 				</noindex>

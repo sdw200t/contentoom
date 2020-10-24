@@ -26,7 +26,7 @@
 				<div class="news_item_edit">
 					<div class="status_correction"><b>на исправлении</b></div>				
 				<!--кнопка редактировать-->
-					<a href="/page/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
+					<a href="/pages/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
 				<!--Кнопка удалить-->
 					<div id="delRelease_764" class="delRelease_764 delText">Удалить</div>
 				</div>
@@ -83,7 +83,7 @@
 				<div class="news_item_edit">
 					<div class="status_correction"><b>на исправлении</b></div>				
 				<!--кнопка редактировать-->
-					<a href="/page/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
+					<a href="/pages/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
 				<!--Кнопка удалить-->
 					<div id="delRelease_764" class="delRelease_764 delText">Удалить</div>
 				</div>
@@ -140,7 +140,7 @@
 				<div class="news_item_edit">
 					<div class="status_correction"><b>на исправлении</b></div>				
 				<!--кнопка редактировать-->
-					<a href="/page/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
+					<a href="/pages/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
 				<!--Кнопка удалить-->
 					<div id="delRelease_764" class="delRelease_764 delText">Удалить</div>
 				</div>
@@ -197,7 +197,7 @@
 				<div class="news_item_edit">
 					<div class="status_correction"><b>на исправлении</b></div>				
 				<!--кнопка редактировать-->
-					<a href="/page/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
+					<a href="/pages/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
 				<!--Кнопка удалить-->
 					<div id="delRelease_764" class="delRelease_764 delText">Удалить</div>
 				</div>
@@ -254,7 +254,7 @@
 				<div class="news_item_edit">
 					<div class="status_correction"><b>на исправлении</b></div>				
 				<!--кнопка редактировать-->
-					<a href="/page/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
+					<a href="/pages/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
 				<!--Кнопка удалить-->
 					<div id="delRelease_764" class="delRelease_764 delText">Удалить</div>
 				</div>
@@ -311,7 +311,7 @@
 				<div class="news_item_edit">
 					<div class="status_correction"><b>на исправлении</b></div>				
 				<!--кнопка редактировать-->
-					<a href="/page/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
+					<a href="/pages/app/audio-release/main.aspx"><div class="edText">Редактировать</div></a>
 				<!--Кнопка удалить-->
 					<div id="delRelease_764" class="delRelease_764 delText">Удалить</div>
 				</div>

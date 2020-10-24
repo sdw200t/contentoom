@@ -40,7 +40,7 @@
 						<input type="checkbox" id="USER_REMEMBER_1" name="USER_REMEMBER_1" value="Y">
 						<span class="bx-filter-param-text">Я согласен на обработку персональных данных.</span>
 					</label>
-					<a href="/page/auth/personal-agreement.aspx">Соглашение на обработку персональных данных</a>
+					<a href="/pages/auth/personal-agreement.aspx">Соглашение на обработку персональных данных</a>
 				</div>
 		
 		<!--			правила сервиса-->
@@ -49,7 +49,7 @@
 						<input type="checkbox" id="USER_REMEMBER_2" name="USER_REMEMBER_2" value="Y">
 						<span class="bx-filter-param-text">Я прочёл правила сервиса и согласен с ними.</span>
 					</label>
-					<a href="/page/auth/terms-of-use.aspx">Пользовательское соглашение</a>
+					<a href="/pages/auth/terms-of-use.aspx">Пользовательское соглашение</a>
 				</div>
 		
 		<!--			Защита от автоматической регистрации-->
@@ -59,7 +59,7 @@
 		
 				<div class="auth_btn">
 					<div>
-						<a href="/page/auth/login.aspx" rel="nofollow" class="button orange W160">ВОЙТИ</a>
+						<a href="/pages/auth/login.aspx" rel="nofollow" class="button orange W160">ВОЙТИ</a>
 					</div>
 					<input type="submit" class="button green" name="register_submit_button" value="ЗАРЕГЕСТРИРОВАТЬСЯ">
 				</div>

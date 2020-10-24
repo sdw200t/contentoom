@@ -22,7 +22,7 @@
             <div class="release_menu_top" id="release_menu_top">
                 <!--Данные релиза-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/main.aspx">
+                    <a href="/pages/app/audio-release/main.aspx">
                         <div class="elem_menu">
                             Данные релиза					
                         </div>
@@ -30,7 +30,7 @@
                 </div>
                 <!--Аудио файлы фонограмм-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/files.aspx">
+                    <a href="/pages/app/audio-release/files.aspx">
                         <div class="elem_menu">
                             Аудио файлы фонограмм					
                         </div>
@@ -38,7 +38,7 @@
                 </div>
                 <!--Метаданные фонограмм-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/metadata.aspx">
+                    <a href="/pages/app/audio-release/metadata.aspx">
                         <div class="elem_menu">
                             Метаданные фонограмм					
                         </div>
@@ -46,7 +46,7 @@
                 </div>
                 <!--Регионы-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/regions.aspx">
+                    <a href="/pages/app/audio-release/regions.aspx">
                         <div class="elem_menu">
                             Регионы					
                         </div>
@@ -54,7 +54,7 @@
                 </div>
                 <!--Промо-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/promo.aspx">
+                    <a href="/pages/app/audio-release/promo.aspx">
                         <div class="elem_menu_active">
                             Промо					
                         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <!--Готовность-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/ready.aspx">
+                    <a href="/pages/app/audio-release/ready.aspx">
                         <div class="elem_menu">
                             Готовность					
                         </div>
@@ -70,7 +70,7 @@
                 </div>
                 <!--Проверка и отправка-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/check.aspx">
+                    <a href="/pages/app/audio-release/check.aspx">
                         <div class="elem_menu">
                             Проверка и отправка					
                         </div>

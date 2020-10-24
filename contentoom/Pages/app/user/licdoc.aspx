@@ -38,8 +38,8 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
             <img src="/user-uploads/profile/1/signature.png" alt="ваша подпись">
         </div>
         <div class="flexim">
-            <a href="/page/app/user/profile-view.aspx" class="button cancel">ОТМЕНА</a>
-             <a href="/page/app/user/profile-view.aspx" class="button confirm">ПОДТВЕРДИТЬ</a>
+            <a href="/pages/app/user/profile-view.aspx" class="button cancel">ОТМЕНА</a>
+             <a href="/pages/app/user/profile-view.aspx" class="button confirm">ПОДТВЕРДИТЬ</a>
         </div>
         <div id="result">
         </div>

@@ -23,7 +23,7 @@
             <div class="release_menu_top" id="release_menu_top">
                 <!--Данные релиза-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/main.aspx">
+                    <a href="/pages/app/audio-release/main.aspx">
                         <div class="elem_menu">
                             Данные релиза					
                         </div>
@@ -31,7 +31,7 @@
                 </div>
                 <!--Аудио файлы фонограмм-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/files.aspx">
+                    <a href="/pages/app/audio-release/files.aspx">
                         <div class="elem_menu">
                             Аудио файлы фонограмм					
                         </div>
@@ -39,7 +39,7 @@
                 </div>
                 <!--Метаданные фонограмм-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/metadata.aspx">
+                    <a href="/pages/app/audio-release/metadata.aspx">
                         <div class="elem_menu_active">
                             Метаданные фонограмм					
                         </div>
@@ -47,7 +47,7 @@
                 </div>
                 <!--Регионы-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/regions.aspx">
+                    <a href="/pages/app/audio-release/regions.aspx">
                         <div class="elem_menu">
                             Регионы					
                         </div>
@@ -55,7 +55,7 @@
                 </div>
                 <!--Промо-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/promo.aspx">
+                    <a href="/pages/app/audio-release/promo.aspx">
                         <div class="elem_menu">
                             Промо					
                         </div>
@@ -63,7 +63,7 @@
                 </div>
                 <!--Готовность-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/ready.aspx">
+                    <a href="/pages/app/audio-release/ready.aspx">
                         <div class="elem_menu">
                             Готовность					
                         </div>
@@ -71,7 +71,7 @@
                 </div>
                 <!--Проверка и отправка-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/check.aspx">
+                    <a href="/pages/app/audio-release/check.aspx">
                         <div class="elem_menu">
                             Проверка и отправка					
                         </div>
@@ -125,7 +125,7 @@
                         $('#btn_addph_3').click(function () {
                             $.ajax({
                                 method: "POST",
-                                url: "/page/app/audio-release/refresh-page/create-iblock-ph-3.aspx",
+                                url: "/pages/app/audio-release/refresh-page/create-iblock-ph-3.aspx",
                                 data: { ReleaseID: 845, RUserID: 4 },
                                 dataType: 'html',
                                 cache: false,
@@ -134,7 +134,7 @@
                                     //Обновление списка
                                     $.ajax({
                                         method: "POST",
-                                        url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                        url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                         data: { CODE: 845 }, //параметры которые передаём
                                         dataType: 'html', //Тип данных
                                         cache: false,
@@ -150,7 +150,7 @@
                                     //Обновление кнопки
                                     $.ajax({
                                         method: "POST",
-                                        url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                        url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                         data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                         dataType: 'html', //Тип данных
                                         cache: false,
@@ -238,7 +238,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 865 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -247,7 +247,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -264,7 +264,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -331,7 +331,7 @@
                             </a>
                             <script>
                                 function phEdit_866() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=866&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=866&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -347,7 +347,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 866 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -393,7 +393,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 866 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -402,7 +402,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -419,7 +419,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -486,7 +486,7 @@
                             </a>
                             <script>
                                 function phEdit_867() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=867&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=867&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -502,7 +502,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 867 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -548,7 +548,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 867 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -557,7 +557,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -574,7 +574,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -641,7 +641,7 @@
                             </a>
                             <script>
                                 function phEdit_868() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=868&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=868&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -657,7 +657,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 868 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -703,7 +703,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 868 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -712,7 +712,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -729,7 +729,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -796,7 +796,7 @@
                             </a>
                             <script>
                                 function phEdit_869() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=869&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=869&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -812,7 +812,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 869 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -858,7 +858,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 869 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -867,7 +867,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -884,7 +884,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -951,7 +951,7 @@
                             </a>
                             <script>
                                 function phEdit_870() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=870&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=870&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -967,7 +967,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 870 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -1013,7 +1013,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 870 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1022,7 +1022,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1039,7 +1039,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1106,7 +1106,7 @@
                             </a>
                             <script>
                                 function phEdit_871() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=871&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=871&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -1122,7 +1122,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 871 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -1168,7 +1168,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 871 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1177,7 +1177,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1194,7 +1194,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1261,7 +1261,7 @@
                             </a>
                             <script>
                                 function phEdit_872() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=872&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=872&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -1277,7 +1277,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 872 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -1323,7 +1323,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 872 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1332,7 +1332,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1349,7 +1349,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1416,7 +1416,7 @@
                             </a>
                             <script>
                                 function phEdit_873() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=873&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=873&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -1432,7 +1432,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 873 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -1478,7 +1478,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 873 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1487,7 +1487,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1504,7 +1504,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1571,7 +1571,7 @@
                             </a>
                             <script>
                                 function phEdit_874() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=874&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=874&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -1587,7 +1587,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 874 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -1633,7 +1633,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 874 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1642,7 +1642,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1659,7 +1659,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1726,7 +1726,7 @@
                             </a>
                             <script>
                                 function phEdit_875() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=875&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=875&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -1742,7 +1742,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 875 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -1788,7 +1788,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 875 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1797,7 +1797,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1814,7 +1814,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1881,7 +1881,7 @@
                             </a>
                             <script>
                                 function phEdit_876() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=876&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=876&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -1897,7 +1897,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 876 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -1943,7 +1943,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 876 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1952,7 +1952,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1969,7 +1969,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2036,7 +2036,7 @@
                             </a>
                             <script>
                                 function phEdit_877() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=877&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=877&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -2052,7 +2052,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 877 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -2098,7 +2098,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 877 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2107,7 +2107,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2124,7 +2124,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2191,7 +2191,7 @@
                             </a>
                             <script>
                                 function phEdit_878() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=878&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=878&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -2207,7 +2207,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 878 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -2253,7 +2253,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 878 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2262,7 +2262,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2279,7 +2279,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2346,7 +2346,7 @@
                             </a>
                             <script>
                                 function phEdit_879() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=879&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=879&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -2362,7 +2362,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 879 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -2408,7 +2408,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 879 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2417,7 +2417,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2434,7 +2434,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2501,7 +2501,7 @@
                             </a>
                             <script>
                                 function phEdit_880() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=880&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=880&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -2517,7 +2517,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 880 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -2563,7 +2563,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 880 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2572,7 +2572,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2589,7 +2589,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2656,7 +2656,7 @@
                             </a>
                             <script>
                                 function phEdit_881() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=881&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=881&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -2672,7 +2672,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 881 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,
@@ -2718,7 +2718,7 @@
                                                     click: function () {
                                                         $.ajax({
                                                             method: "POST",
-                                                            url: "/page/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delMetaData.aspx", //загружаемая страница
                                                             data: { "deleteid": 881 }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2727,7 +2727,7 @@
                                                                 //Обновление списка
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-metadata.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2744,7 +2744,7 @@
                                                                 //Обновление кнопки
                                                                 $.ajax({
                                                                     method: "POST",
-                                                                    url: "/page/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/create-iblock-ph-button-refresh.aspx", //загружаемая страница
                                                                     data: { ReleaseID: 845, RUserID: 4 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2811,7 +2811,7 @@
                             </a>
                             <script>
                                 function phEdit_882() {
-                                    BX.SidePanel.Instance.open("/page/app/audio-release/metadata-edit.aspx?edit=Y&CODE=882&lang_ui=ru",
+                                    BX.SidePanel.Instance.open("/pages/app/audio-release/metadata-edit.aspx?edit=Y&CODE=882&lang_ui=ru",
                                         {
                                             cacheable: false, //кеширование страницы
                                             allowChangeHistory: false,
@@ -2827,7 +2827,7 @@
                                                     //Обновление списка
                                                     $.ajax({
                                                         method: "POST",
-                                                        url: "/page/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
+                                                        url: "/pages/app/audio-release/refresh-page/get-meta-name.aspx", //загружаемая страница
                                                         data: { metaID: 882 }, //параметры которые передаём
                                                         dataType: 'html', //Тип данных
                                                         cache: false,

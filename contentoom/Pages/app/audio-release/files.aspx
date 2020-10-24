@@ -22,7 +22,7 @@
             <div class="release_menu_top" id="release_menu_top">
                 <!--Данные релиза-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/main.aspx">
+                    <a href="/pages/app/audio-release/main.aspx">
                         <div class="elem_menu">
                             Данные релиза					
                         </div>
@@ -30,7 +30,7 @@
                 </div>
                 <!--Аудио файлы фонограмм-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/files.aspx">
+                    <a href="/pages/app/audio-release/files.aspx">
                         <div class="elem_menu_active">
                             Аудио файлы фонограмм					
                         </div>
@@ -38,7 +38,7 @@
                 </div>
                 <!--Метаданные фонограмм-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/metadata.aspx">
+                    <a href="/pages/app/audio-release/metadata.aspx">
                         <div class="elem_menu">
                             Метаданные фонограмм					
                         </div>
@@ -46,7 +46,7 @@
                 </div>
                 <!--Регионы-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/regions.aspx">
+                    <a href="/pages/app/audio-release/regions.aspx">
                         <div class="elem_menu">
                             Регионы					
                         </div>
@@ -54,7 +54,7 @@
                 </div>
                 <!--Промо-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/promo.aspx">
+                    <a href="/pages/app/audio-release/promo.aspx">
                         <div class="elem_menu">
                             Промо					
                         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <!--Готовность-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/ready.aspx">
+                    <a href="/pages/app/audio-release/ready.aspx">
                         <div class="elem_menu">
                             Готовность					
                         </div>
@@ -70,7 +70,7 @@
                 </div>
                 <!--Проверка и отправка-->
                 <div class="full_elem_menu">
-                    <a href="/page/app/audio-release/check.aspx">
+                    <a href="/pages/app/audio-release/check.aspx">
                         <div class="elem_menu">
                             Проверка и отправка					
                         </div>
@@ -209,7 +209,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 846, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_01_Povoroty_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -217,7 +217,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -344,7 +344,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 847, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_02_Vne_Pravil_CD_mast_2-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -352,7 +352,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -479,7 +479,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 848, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_03_Pulse_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -487,7 +487,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -614,7 +614,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 849, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_04_Jeff_44_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -622,7 +622,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -749,7 +749,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 850, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_05_Game_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -757,7 +757,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -884,7 +884,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 851, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_06_Extaz_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -892,7 +892,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1019,7 +1019,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 852, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_07_Neokon_Povest3.3-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1027,7 +1027,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1154,7 +1154,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 853, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_08_SexHorses_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1162,7 +1162,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1289,7 +1289,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 854, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_09_S_Blues_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1297,7 +1297,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1424,7 +1424,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 855, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_10_Avalanche_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1432,7 +1432,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1559,7 +1559,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 856, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_11_Vokr_Purpur2.3-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1567,7 +1567,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1694,7 +1694,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 857, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_12_Play_with_Me_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1702,7 +1702,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1829,7 +1829,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 858, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_13_Free_line_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1837,7 +1837,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -1964,7 +1964,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 859, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_14_I_Love_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -1972,7 +1972,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2099,7 +2099,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 860, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_15_Otkrovenye4.3-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2107,7 +2107,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2234,7 +2234,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 861, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_16_Rubikon_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2242,7 +2242,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2369,7 +2369,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 862, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_17_Friends_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2377,7 +2377,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2504,7 +2504,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 863, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_18_Smyteniye5.3-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2512,7 +2512,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
@@ -2639,7 +2639,7 @@
                                                         //Действие по нажатию элемента с ID = btn_refresh
                                                         $.ajax({
                                                             method: "GET",
-                                                            url: "/page/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
+                                                            url: "/pages/app/audio-release/refresh-page/delfile.aspx", //загружаемая страница
                                                             data: { deleteid: 864, fileparam: "/home/e/evolik/contentoom.com/public_html/user-uploads/preparation/release_audio/4/845/audtrk_19_Na_Schastye_CD_mast-p2p.wav" }, //параметры которые передаём
                                                             dataType: 'html', //Тип данных
                                                             cache: false,
@@ -2647,7 +2647,7 @@
                                                             .done(function (result) {
                                                                 $.ajax({
                                                                     method: "GET",
-                                                                    url: "/page/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
+                                                                    url: "/pages/app/audio-release/refresh-page/refresh-list-files.aspx", //загружаемая страница
                                                                     data: { CODE: 845 }, //параметры которые передаём
                                                                     dataType: 'html', //Тип данных
                                                                     cache: false,
