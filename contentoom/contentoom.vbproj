@@ -531,7 +531,6 @@
     <Content Include="testPages\Test.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="testPages\TestCapcha.aspx" />
     <Content Include="testPages\TestDrop.aspx" />
     <Content Include="testPages\TestFTP.aspx" />
     <Content Include="testPages\testLanguage.aspx" />
@@ -869,13 +868,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="testPages\TestCapcha.aspx.designer.vb">
-      <DependentUpon>TestCapcha.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="testPages\TestCapcha.aspx.vb">
-      <DependentUpon>TestCapcha.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="testPages\TestDrop.aspx.designer.vb">
       <DependentUpon>TestDrop.aspx</DependentUpon>
