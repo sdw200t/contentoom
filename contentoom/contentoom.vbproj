@@ -961,8 +961,8 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Content Include="Pages\app\audio-release\App_LocalResources\main.aspx.resx" />
-    <Content Include="Pages\App_LocalResources\testLanguage.aspx.resx" />
-    <Content Include="Pages\App_LocalResources\testLanguage.aspx.en.resx" />
+    <Content Include="testPages\App_LocalResources\testLanguage.aspx.resx" />
+    <Content Include="testPages\App_LocalResources\testLanguage.aspx.en.resx" />
     <Content Include="Pages\app\audio-release\App_LocalResources\main.aspx.en.resx" />
     <EmbeddedResource Include="Resources\index.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>

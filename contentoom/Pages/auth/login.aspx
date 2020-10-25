@@ -12,18 +12,18 @@
 				<img src="/img/logo-height.png">
 			</div>
 
-			<form name="Auth" method="post" target="_top" action="actio_url">
+			<form name="Auth" method="post" target="_top" runat="server">
 
 	<!--			Логин-->
 				<div class="botmarg17">
 					<div class="elem_name">Логин</div>
-					<input type="text" class="input_text W400" name="USER_LOGIN" maxlength="255">
+					<input id="USER_LOGIN" type="email" class="input_text W400" name="USER_LOGIN" maxlength="255" runat="server" />
 				</div>
 			
 	<!--			Пароль-->
 				<div class="botmarg17">
 					<div class="elem_name">Пароль</div>
-					<input type="password" class="input_text W400" name="USER_PASSWORD" maxlength="255" autocomplete="off">
+					<input id="USER_PASSWORD" type="password" class="input_text W400" name="USER_PASSWORD" maxlength="255" autocomplete="off" runat="server" />
 				</div>
 			
 	<!--			Запомнить меня на этом компьютере-->
@@ -48,7 +48,7 @@
 					<div>
 						<a href="/pages/auth/registration.aspx" rel="nofollow" class="button orange">ЗАРЕГЕСТРИРОВАТЬСЯ</a>
 					</div>
-					<input type="submit" class="button green W160" name="AUTH_ACTION" value="ВОЙТИ">
+					<input ID="btnAuth" type="submit" class="button green W160" name="AUTH_ACTION" value="ВОЙТИ" runat="server" />
 				</div>
 			
 			</form>

@@ -2,7 +2,8 @@
 Imports System.Net.Mail
 
 Public Class MailSender
-    Public Shared Sub SendEmail(AdressTo As String, Text As String) 'Message As MailMessage, SmtpAdress As String, SmtpPort As int, Login As String, String Password)
+    Public Shared Sub SendEmail(AdressTo As String, Text As String)
+        'Message As MailMessage, SmtpAdress As String, SmtpPort As int, Login As String, String Password)
         Try
             Dim Smtp_Server As New SmtpClient
             Dim e_mail As New MailMessage()

@@ -66,6 +66,7 @@ Public Class DataBase
         LogTxt.SaveLog("--------------------------------------")
         Try
             With _Command
+                .Parameters.Clear()
                 .CommandType = CommandType.StoredProcedure
                 .CommandText = "AudioRelease_Insert"
 
@@ -116,13 +117,14 @@ Public Class DataBase
         LogTxt.SaveLog("--------------------------------------")
         Try
             With _Command
+                .Parameters.Clear()
                 .CommandType = CommandType.StoredProcedure
                 .CommandText = "dctUsers_Insert"
 
                 ' Задаем парметр IdGroupUsers
                 Dim p_IdGroupUsers As New MySqlParameter With
                     {
-                    .ParameterName = "pIdGroupUsers",
+                    .ParameterName = "p_IdGroupUsers",
                     .Value = IdGroupUsers
                     }
                 .Parameters.Add(p_IdGroupUsers)
@@ -130,7 +132,7 @@ Public Class DataBase
                 ' Задаем парметр Login
                 Dim p_Login As New MySqlParameter With
                     {
-                    .ParameterName = "pLogin",
+                    .ParameterName = "p_Login",
                     .Value = Login
                     }
                 .Parameters.Add(p_Login)
@@ -138,7 +140,7 @@ Public Class DataBase
                 ' Задаем парметр Password
                 Dim p_Password As New MySqlParameter With
                     {
-                    .ParameterName = "pPassword",
+                    .ParameterName = "p_Password",
                     .Value = Password
                     }
                 .Parameters.Add(p_Password)
@@ -146,7 +148,7 @@ Public Class DataBase
                 ' Задаем парметр CodeRegistration
                 Dim p_CodeRegistration As New MySqlParameter With
                     {
-                    .ParameterName = "pCodeRegistration",
+                    .ParameterName = "p_CodeRegistration",
                     .Value = CodeRegistration
                     }
                 .Parameters.Add(p_CodeRegistration)
@@ -154,14 +156,52 @@ Public Class DataBase
                 ' Задаем парметр ID
                 Dim p_ID As New MySqlParameter With
                     {
-                    .ParameterName = "pID"
+                    .ParameterName = "p_ID"
                     }
                 .Parameters.Add(p_ID)
-                .Parameters("pID").Direction = ParameterDirection.Output
+                .Parameters("p_ID").Direction = ParameterDirection.Output
 
                 .ExecuteNonQuery()
 
-                Dim ID = .Parameters("pID").Value
+                Dim ID = .Parameters("p_ID").Value
+            End With
+            Return True
+        Catch ex As Exception
+            MsgBox("При попытке выполнить команду произошла следующая ошибка. " & ex.Message)
+            LogTxt.SaveLog(ex.Message)
+            Return False
+        End Try
+        Return True
+    End Function
+    Public Function Execute_SP_Users_Select(IdUser As Integer,
+                                            Login As String, ByRef Reader As MySqlDataReader) As Boolean
+        LogTxt.SaveLog("**************************************")
+        LogTxt.SaveLog("Class DataBase")
+        LogTxt.SaveLog("Execute_SP_Users_Select")
+        LogTxt.SaveLog("--------------------------------------")
+        Try
+            With _Command
+                .CommandType = CommandType.StoredProcedure
+                .CommandText = "dctUsers_Select"
+
+                ' Задаем парметр p_IdUser
+                Dim p_IdUser As New MySqlParameter With
+                    {
+                    .ParameterName = "p_IdUser",
+                    .Value = IdUser
+                    }
+                .Parameters.Add(p_IdUser)
+
+                ' Задаем парметр p_Login
+                Dim p_Login As New MySqlParameter With
+                    {
+                    .ParameterName = "p_Login",
+                    .Value = Login
+                    }
+                .Parameters.Add(p_Login)
+
+                Reader = .ExecuteReader()
+
             End With
             Return True
         Catch ex As Exception
