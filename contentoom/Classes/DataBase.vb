@@ -174,13 +174,14 @@ Public Class DataBase
         Return True
     End Function
     Public Function Execute_SP_Users_Select(IdUser As Integer,
-                                            Login As String, ByRef Reader As MySqlDataReader) As Boolean
+                                            Login As String, Password As String, ByRef Reader As MySqlDataReader) As Boolean
         LogTxt.SaveLog("**************************************")
         LogTxt.SaveLog("Class DataBase")
         LogTxt.SaveLog("Execute_SP_Users_Select")
         LogTxt.SaveLog("--------------------------------------")
         Try
             With _Command
+                .Parameters.Clear()
                 .CommandType = CommandType.StoredProcedure
                 .CommandText = "dctUsers_Select"
 
@@ -199,6 +200,14 @@ Public Class DataBase
                     .Value = Login
                     }
                 .Parameters.Add(p_Login)
+
+                ' Задаем парметр p_Password
+                Dim p_Password As New MySqlParameter With
+                    {
+                    .ParameterName = "p_Password",
+                    .Value = Password
+                    }
+                .Parameters.Add(p_Password)
 
                 Reader = .ExecuteReader()
 

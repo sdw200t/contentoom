@@ -65,5 +65,5 @@ Partial Public Class authRegistration
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents btnRegistration As Global.System.Web.UI.HtmlControls.HtmlInputSubmit
+    Protected WithEvents btnRegistration As Global.System.Web.UI.WebControls.Button
 End Class

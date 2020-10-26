@@ -7,22 +7,22 @@ Public Class authRegistration
 
     End Sub
 
-    Protected Sub btnRegistration_Click(sender As Object, e As EventArgs) Handles btnRegistration.ServerClick
+    Protected Sub btnRegistration_Click(sender As Object, e As EventArgs) Handles btnRegistration.Click
         'Проверить почту
-        'If Not RegexUtilities.IsValidEmail(registr_email.Value) Then
-        '    MsgBox("Не корректный email")
-        '    Return
-        'End If
+        If Not RegexUtilities.IsValidEmail(registr_email.Value) Then
+            MsgBox("Не корректный email")
+            Return
+        End If
 
         'Проверить пароли введены одинаковые
-        'If Not registr_pass.Value = registr_cpass.Value Then
-        '    MsgBox("Пароли не совпадают")
-        '    Return
-        'End If
+        If Not registr_pass.Value = registr_cpass.Value Then
+            MsgBox("Пароли не совпадают")
+            Return
+        End If
 
         'Проверить пароли соответсвуют требуемой сложности
         '' Demonstrate that "Z9f%a>2kQ" is not complex.
-        'If Not RegexUtilities.ValidatePassword(registr_pass.Text)) Then
+        'If Not RegexUtilities.ValidatePassword(registr_pass.Value)) Then
         'End If
 
         'Проверить captcha
@@ -43,7 +43,7 @@ Public Class authRegistration
         'Проверить существование пользователя
         Dim DB = New DataBase()
         Dim Reader As MySqlDataReader
-        If Not DB.Execute_SP_Users_Select(0, registr_email.Value, Reader) Then
+        If Not DB.Execute_SP_Users_Select(0, registr_email.Value, "", Reader) Then
             Return
         End If
         If Reader.Read Then

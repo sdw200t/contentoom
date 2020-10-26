@@ -39,7 +39,7 @@
 		<!--			обработка персональных данных-->
 				<div class="botmarg17">
 					<label class="bx-filter-param-label">
-						<input type="checkbox" id="USER_REMEMBER_1" name="USER_REMEMBER_1" value="Y" />
+						<input type="checkbox" id="USER_REMEMBER_1" name="USER_REMEMBER_1" value="Y" onclick="checkbox_OnClick()" />
 						<span class="bx-filter-param-text">Я согласен на обработку персональных данных.</span>
 					</label>
 					<a href="/pages/auth/personal-agreement.aspx">Соглашение на обработку персональных данных</a>
@@ -48,7 +48,7 @@
 		<!--			правила сервиса-->
 				<div class="botmarg17">
 					<label class="bx-filter-param-label">
-						<input type="checkbox" id="USER_REMEMBER_2" name="USER_REMEMBER_2" value="Y">
+						<input type="checkbox" id="USER_REMEMBER_2" name="USER_REMEMBER_2" value="Y" onclick="checkbox_OnClick()" />
 						<span class="bx-filter-param-text">Я прочёл правила сервиса и согласен с ними.</span>
 					</label>
 					<a href="/pages/auth/terms-of-use.aspx">Пользовательское соглашение</a>
@@ -64,7 +64,7 @@
 					<div>
 						<a href="/pages/auth/login.aspx" rel="nofollow" class="button orange W160">ВОЙТИ</a>
 					</div>
-					<input ID="btnRegistration" type="submit" class="button green" name="register_submit_button" value="ЗАРЕГЕСТРИРОВАТЬСЯ" runat="server"/>
+					<asp:button ID="btnRegistration" class="button green" name="register_submit_button" value="ЗАРЕГЕСТРИРОВАТЬСЯ" Text="ЗАРЕГЕСТРИРОВАТЬСЯ" runat="server"/>
 				</div>
 		
 			</form>
@@ -72,15 +72,22 @@
 		</div>
 	</div>
 
-<%-- Проверка отмеченных чекбокс	
-	<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+	<%--Проверка отмеченных чекбокс--%>	
 	<script>
-        $('#USER_REMEMBER_1').click(function(){
-            if ($(this).is(':checked')){
-                $('#btnRegistration').removeAttr('disabled');
+		var btnReg = document.getElementById('ContentPlaceHolderEmpty_btnRegistration');
+		var cb1 = document.getElementById('USER_REMEMBER_1');
+		var cb2 = document.getElementById('USER_REMEMBER_2');
+		btnReg.setAttribute('disabled', 'disabled');
+		btnReg.setAttribute('class', 'button input_disable');
+
+		function checkbox_OnClick() {
+			if (cb1.checked && cb2.checked) {
+				btnReg.removeAttribute('disabled');
+				btnReg.setAttribute('class', 'button green');
 			} else {
-                $('#btnRegistration').attr('disabled', 'disabled'); 
+				btnReg.setAttribute('disabled', 'disabled');
+				btnReg.setAttribute('class', 'button input_disable');
 			}
-		});
-	</script>--%>
+		}
+	</script>
 </asp:Content>
