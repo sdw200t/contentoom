@@ -9,7 +9,7 @@
 	<div class="release_title"><h2>АУДИО РЕЛИЗЫ</h2></div>
 	<div class="release_subtitle"><h1>СПИСОК</h1></div>
 
-	<div class="addRelease purple_but">Добавить релиз</div>
+	<a href="/pages/app/audio-release/main.aspx"><div class="addRelease purple_but">Добавить релиз</div></a>
 	
 
 	<div class="news-list">

@@ -515,6 +515,7 @@
     <Content Include="Pages\app\user\list.aspx" />
     <Content Include="Pages\app\user\profile-edit.aspx" />
     <Content Include="Pages\app\user\profile-view.aspx" />
+    <Content Include="Pages\auth\confirm-registration.aspx" />
     <Content Include="Pages\auth\index.aspx" />
     <Content Include="Pages\auth\login.aspx" />
     <Content Include="Pages\auth\personal-agreement.aspx" />
@@ -795,6 +796,13 @@
     </Compile>
     <Compile Include="Pages\app\user\profile-view.aspx.vb">
       <DependentUpon>profile-view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\auth\confirm-registration.aspx.designer.vb">
+      <DependentUpon>confirm-registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\auth\confirm-registration.aspx.vb">
+      <DependentUpon>confirm-registration.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Pages\auth\index.aspx.designer.vb">
