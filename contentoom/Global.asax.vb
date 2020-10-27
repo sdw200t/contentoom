@@ -13,7 +13,7 @@ Public Class Global_asax
         ' Объявление и инициализация переменных сессии.
         'Session("DB") = Nothing ' Подключение к БД.
         Session("UserName") = "" ' Имя пользователя.
-
+        Session("culture") = "ru" ' язык
         Session("StringMessage") = "Переменная сессии инициализирована"
     End Sub
 

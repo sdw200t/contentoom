@@ -131,7 +131,7 @@
                         Тип				
                     </div>
                     <div class="botmarg37">
-                        <select name="PROPERTY[1][0][VALUE]">
+                        <select id="dctAudioReleaseType" name="PROPERTY[1][0][VALUE]" runat="server">
                             <option value="">(не выбрано)</option>
                             <option value="jazz">Джаз </option>
                             <option value="classic">Классическая </option>
@@ -385,7 +385,7 @@
                 Жанр           
             </div>
             <div class="botmarg37">
-                <select name="PROPERTY[8][0][VALUE]" id="genre">
+                <select id="dctAudioReleaseGenres" name="PROPERTY[8][0][VALUE]" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="43">Alternative </option>
                     <option value="160">Anime </option>
@@ -441,496 +441,8 @@
             </div>
             <div class="botmarg37">
                 <div id="refreshStyle">
-                    <select name="PROPERTY[9][0][VALUE]">
+                    <select id="dctAudioReleaseStyle" name="PROPERTY[9][0][VALUE]" runat="server">
                         <option value="">(не выбрано)</option>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                         <option value="35">Adult Alternative</option>
@@ -1001,153 +513,28 @@
 
                         <option value="571">Tex-Mex</option>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </select>
                 </div>
                 <script>
-                    $("#genre").change(function () {
-                        $(document).ready(function () {
-                            $.ajax({
-                                type: "POST",
-                                url: "/pages/app/audio-release/refresh-page/style-list.aspx",
-                                data: { "GenreID": document.getElementById("genre").value },
-                                dataType: 'html',
-                                cache: false,
-                            })
-                                .done(function (result) {
-                                    console.log('ok');
-                                    document.getElementById("refreshStyle").innerHTML = result;
-                                    console.log(result);
-                                })
-                                .fail(function (error) {
+                    //$("#genre").change(function () {
+                    //    $(document).ready(function () {
+                    //        $.ajax({
+                    //            type: "POST",
+                    //            url: "/pages/app/audio-release/refresh-page/style-list.aspx",
+                    //            data: { "GenreID": document.getElementById("genre").value },
+                    //            dataType: 'html',
+                    //            cache: false,
+                    //        })
+                    //            .done(function (result) {
+                    //                console.log('ok');
+                    //                document.getElementById("refreshStyle").innerHTML = result;
+                    //                console.log(result);
+                    //            })
+                    //            .fail(function (error) {
 
-                                });
-                        });
-                    });
+                    //            });
+                    //    });
+                    //});
                 </script>
             </div>
 
@@ -1183,7 +570,7 @@
                 Формат аудио релиза           
             </div>
             <div class="botmarg37 flexim">
-                <select name="PROPERTY[13][0][VALUE]">
+                <select id="dctAudioReleaseFormat" name="PROPERTY[13][0][VALUE]" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="format_single">Single </option>
                     <option value="format_ep">EP </option>
@@ -1202,12 +589,12 @@
                 <input type="text" name="PROPERTY[15][0][VALUE]" class="input_text W450" id="PROPERTY_15_0" value="Moscow City Records">
             </div>
             <script>
-                $("#PROPERTY_15_0").change(function () {
-                    if (document.getElementById("PROPERTY_15_0").value != "" && document.getElementById("PROPERTY_16_0").value == "") {
-                        document.getElementById("PROPERTY_16_0").value = document.getElementById("PROPERTY_15_0").value;
-                    };
+                //$("#PROPERTY_15_0").change(function () {
+                //    if (document.getElementById("PROPERTY_15_0").value != "" && document.getElementById("PROPERTY_16_0").value == "") {
+                //        document.getElementById("PROPERTY_16_0").value = document.getElementById("PROPERTY_15_0").value;
+                //    };
 
-                });
+                //});
             </script>
 
             <!--© Музыкальный издатель (Авторские права)-->
@@ -1458,14 +845,14 @@
                     <br>
                 </div>
                 <script>
-                    $(document).ready(function () {
-                        $("#CheckAllShowcase").click(function () {
-                            if (!$("#CheckAllShowcase").is(":checked"))
-                                $(".checkShowcase").removeAttr("checked");
-                            else
-                                $(".checkShowcase").attr("checked", "checked");
-                        });
-                    });
+                    //$(document).ready(function () {
+                    //    $("#CheckAllShowcase").click(function () {
+                    //        if (!$("#CheckAllShowcase").is(":checked"))
+                    //            $(".checkShowcase").removeAttr("checked");
+                    //        else
+                    //            $(".checkShowcase").attr("checked", "checked");
+                    //    });
+                    //});
                 </script>
             </div>
 
@@ -1625,27 +1012,27 @@
                 </span>
             </div>
             <script>
-                $("#PROPERTY_17_0").change(function () {
-                    if (document.getElementById("PROPERTY_17_0").value !== "") {
-                        let textCreat = "27.08.2020";
-                        let dateCreate = new Date(textCreat.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
-                        let dateStart = new Date(document.getElementById("PROPERTY_17_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //$("#PROPERTY_17_0").change(function () {
+                //    if (document.getElementById("PROPERTY_17_0").value !== "") {
+                //        let textCreat = "27.08.2020";
+                //        let dateCreate = new Date(textCreat.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //        let dateStart = new Date(document.getElementById("PROPERTY_17_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
 
-                        if (dateStart < dateCreate) {
-                            document.getElementById("PROPERTY_17_0").value = "";
-                            document.getElementById("PROPERTY_17_0").placeholder = "Не может быть меньши даты создания!";
-                            document.getElementById("PROPERTY_17_0").className = "input_text W400 redBoarder";
-                        }
-                        else {
-                            document.getElementById("PROPERTY_51_0").value = document.getElementById("PROPERTY_17_0").value;
-                            document.getElementById("PROPERTY_53_0").value = document.getElementById("PROPERTY_17_0").value;
-                            document.getElementById("PROPERTY_18_0").value = document.getElementById("PROPERTY_17_0").value;
-                            document.getElementById("PROPERTY_39_0").value = document.getElementById("PROPERTY_17_0").value;
-                            document.getElementById("PROPERTY_41_0").value = document.getElementById("PROPERTY_17_0").value;
-                        }
-                    };
+                //        if (dateStart < dateCreate) {
+                //            document.getElementById("PROPERTY_17_0").value = "";
+                //            document.getElementById("PROPERTY_17_0").placeholder = "Не может быть меньши даты создания!";
+                //            document.getElementById("PROPERTY_17_0").className = "input_text W400 redBoarder";
+                //        }
+                //        else {
+                //            document.getElementById("PROPERTY_51_0").value = document.getElementById("PROPERTY_17_0").value;
+                //            document.getElementById("PROPERTY_53_0").value = document.getElementById("PROPERTY_17_0").value;
+                //            document.getElementById("PROPERTY_18_0").value = document.getElementById("PROPERTY_17_0").value;
+                //            document.getElementById("PROPERTY_39_0").value = document.getElementById("PROPERTY_17_0").value;
+                //            document.getElementById("PROPERTY_41_0").value = document.getElementById("PROPERTY_17_0").value;
+                //        }
+                //    };
 
-                });
+                //});
             </script>
 
             <!--Дата предварительного заказа-->
@@ -1660,26 +1047,26 @@
                 </span>
             </div>
             <script>
-                $("#PROPERTY_18_0").change(function () {
-                    if (document.getElementById("PROPERTY_18_0").value !== "") {
-                        let textCreat = "27.08.2020";
-                        let dateCreate = new Date(textCreat.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
-                        let dateStart = new Date(document.getElementById("PROPERTY_17_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
-                        let datePreorder = new Date(document.getElementById("PROPERTY_18_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //$("#PROPERTY_18_0").change(function () {
+                //    if (document.getElementById("PROPERTY_18_0").value !== "") {
+                //        let textCreat = "27.08.2020";
+                //        let dateCreate = new Date(textCreat.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //        let dateStart = new Date(document.getElementById("PROPERTY_17_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //        let datePreorder = new Date(document.getElementById("PROPERTY_18_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
 
-                        if (datePreorder < dateCreate) {
-                            document.getElementById("PROPERTY_18_0").value = "";
-                            document.getElementById("PROPERTY_18_0").placeholder = "Не может быть меньши даты создания!";
-                            document.getElementById("PROPERTY_18_0").className = "input_text W400 redBoarder";
-                        }
-                        if (datePreorder > dateStart) {
-                            document.getElementById("PROPERTY_18_0").value = "";
-                            document.getElementById("PROPERTY_18_0").placeholder = "Не может быть меньши даты создания!";
-                            document.getElementById("PROPERTY_18_0").className = "input_text W400 redBoarder";
-                        }
-                    };
+                //        if (datePreorder < dateCreate) {
+                //            document.getElementById("PROPERTY_18_0").value = "";
+                //            document.getElementById("PROPERTY_18_0").placeholder = "Не может быть меньши даты создания!";
+                //            document.getElementById("PROPERTY_18_0").className = "input_text W400 redBoarder";
+                //        }
+                //        if (datePreorder > dateStart) {
+                //            document.getElementById("PROPERTY_18_0").value = "";
+                //            document.getElementById("PROPERTY_18_0").placeholder = "Не может быть меньши даты создания!";
+                //            document.getElementById("PROPERTY_18_0").className = "input_text W400 redBoarder";
+                //        }
+                //    };
 
-                });
+                //});
             </script>
 
             <!--		Настройка параметров отгрузки на площадку Apple iTunes	-->
@@ -1705,20 +1092,20 @@
                 <img src="/img/ico/calendar.gif" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'PROPERTY[39][0][VALUE]', form: 'iblock_add', bTime: false, currentTime: '1590840617', bHideTime: true});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
             </div>
             <script>
-                $("#PROPERTY_39_0").change(function () {
-                    if (document.getElementById("PROPERTY_39_0").value !== "") {
-                        let textCreat = "27.08.2020";
-                        let dateCreate = new Date(textCreat.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
-                        let dateExItunes = new Date(document.getElementById("PROPERTY_39_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //$("#PROPERTY_39_0").change(function () {
+                //    if (document.getElementById("PROPERTY_39_0").value !== "") {
+                //        let textCreat = "27.08.2020";
+                //        let dateCreate = new Date(textCreat.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //        let dateExItunes = new Date(document.getElementById("PROPERTY_39_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
 
-                        if (dateExItunes < dateCreate) {
-                            document.getElementById("PROPERTY_39_0").value = "";
-                            document.getElementById("PROPERTY_39_0").placeholder = "Не может быть меньши даты создания!";
-                            document.getElementById("PROPERTY_39_0").className = "input_text W400 redBoarder";
-                        }
-                    };
+                //        if (dateExItunes < dateCreate) {
+                //            document.getElementById("PROPERTY_39_0").value = "";
+                //            document.getElementById("PROPERTY_39_0").placeholder = "Не может быть меньши даты создания!";
+                //            document.getElementById("PROPERTY_39_0").className = "input_text W400 redBoarder";
+                //        }
+                //    };
 
-                });
+                //});
             </script>
 
             <!--Доступен в Apple Music-->
@@ -1741,20 +1128,20 @@
                 <img src="/img/ico/calendar.gif" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'PROPERTY[41][0][VALUE]', form: 'iblock_add', bTime: false, currentTime: '1590840617', bHideTime: true});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
             </div>
             <script>
-                $("#PROPERTY_41_0").change(function () {
-                    if (document.getElementById("PROPERTY_41_0").value !== "") {
-                        let textCreat = "27.08.2020";
-                        let dateCreate = new Date(textCreat.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
-                        let dateExApple = new Date(document.getElementById("PROPERTY_41_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //$("#PROPERTY_41_0").change(function () {
+                //    if (document.getElementById("PROPERTY_41_0").value !== "") {
+                //        let textCreat = "27.08.2020";
+                //        let dateCreate = new Date(textCreat.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
+                //        let dateExApple = new Date(document.getElementById("PROPERTY_41_0").value.replace(/(\d+).(\d+).(\d+)/, '$2/$1/$3'));
 
-                        if (dateExApple < dateCreate) {
-                            document.getElementById("PROPERTY_41_0").value = "";
-                            document.getElementById("PROPERTY_41_0").placeholder = "Не может быть меньши даты создания!";
-                            document.getElementById("PROPERTY_41_0").className = "input_text W400 redBoarder";
-                        }
-                    };
+                //        if (dateExApple < dateCreate) {
+                //            document.getElementById("PROPERTY_41_0").value = "";
+                //            document.getElementById("PROPERTY_41_0").placeholder = "Не может быть меньши даты создания!";
+                //            document.getElementById("PROPERTY_41_0").className = "input_text W400 redBoarder";
+                //        }
+                //    };
 
-                });
+                //});
             </script>
 
             <!--Ценовая категория альбома ITUNES-->
@@ -1762,8 +1149,8 @@
                 Ценовая категория альбома ITUNES           
             </div>
             <div class="botmarg37 flexim">
-                <select name="PROPERTY[42][0][VALUE]">
-                    <option value="" id="PriceCategory">(не выбрано)</option>
+                <select id="dctPriceCategoryAlbumItunes" name="PROPERTY[42][0][VALUE]" runat="server">
+                    <option value="" >(не выбрано)</option>
                     <option value="1">Digital 45 : 1.49€ </option>
                     <option value="2">Mini EP : 1.99€ </option>
                     <option value="3" selected="selected">EP : 2.99€ </option>
@@ -1778,8 +1165,8 @@
                 Ценовая категория трека ITUNES           
             </div>
             <div class="botmarg37 flexim">
-                <select name="PROPERTY[43][0][VALUE]">
-                    <option value="" id="PriceCategory">(не выбрано)</option>
+                <select id="dctPriceCategoryTrack" name="PROPERTY[43][0][VALUE]" runat="server">
+                    <option value="" >(не выбрано)</option>
                     <option value="1">Back : 10руб / 0.69$ / 0.69€ </option>
                     <option value="2">Mid : 15руб / 0.99$ / 0.99€ </option>
                     <option value="3" selected="selected">Front : 19руб / 1.29$ / 1.29€ </option>
@@ -1808,7 +1195,7 @@
                 Минимальная ценовая категория трека iTunes           
             </div>
             <div class="botmarg37">
-                <select name="PROPERTY[45][0][VALUE]">
+                <select id="dctMinPriceItunes" name="PROPERTY[45][0][VALUE]" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="low" selected="selected">Low </option>
                     <option value="lowest">Lowest </option>
@@ -1842,7 +1229,7 @@
                 Язык аудио релиза           
             </div>
             <div class="botmarg37 flexim">
-                <select name="PROPERTY[19][0][VALUE]">
+                <select id="dctLanguages" name="PROPERTY[19][0][VALUE]" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="ru" selected="selected">Russian </option>
                     <option value="en">English </option>
