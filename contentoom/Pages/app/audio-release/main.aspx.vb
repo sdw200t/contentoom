@@ -1,23 +1,26 @@
 ﻿Public Class AudioReleaseMain
     Inherits System.Web.UI.Page
 
-    Protected Sub ReadDct(ByRef db As DataBase, ByRef dropList As Object)
+    Protected Sub ReadDct(ByRef db As DataBase, ByRef dropList As Object, nameDct As String)
 
         'очистка списка
         dropList.Items.Clear()
 
         Dim reader
-        Dim nameDct = dropList.ID
 
         'выборка типов релизов
-        db.CommandText = $"select * from {nameDct}"
+        If nameDct = "dctAudioReleaseStyle" Then
+            db.CommandText = $"select IdAudioReleaseStyle, CodeAudioReleaseStyle, 
+                NameAudioReleaseStyle from {nameDct} where IdAudioReleaseGenres = {IdAudioReleaseGenres.Value}"
+        Else
+            db.CommandText = $"select * from {nameDct}"
+        End If
         reader = db.ExecuteReader()
 
         'заполнение списка 
         While reader.Read
-            'ListItem.Value = reader.GetValue(0) 'Id
             Dim ListItem = New ListItem With {
-                .Value = reader.GetValue(1), 'Code
+                .Value = reader.GetValue(0), 'Code
                 .Text = reader.GetValue(2)  'Name
                 }
             dropList.Items.Add(ListItem)
@@ -32,19 +35,18 @@
         Dim db = New DataBase
 
         'dctAudioReleaseStatus
-        'dctLanguages
 
-        'dctAudioReleaseView
-        ReadDct(db, dctAudioReleaseType)
-        ReadDct(db, dctAudioReleaseGenres)
-        ReadDct(db, dctAudioReleaseStyle) 'колонки не совпадают с основным справочником 
-        ReadDct(db, dctAudioReleaseFormat)
-        ReadDct(db, dctMinPriceItunes)
-        ReadDct(db, dctPriceCategoryAlbumItunes)
-        ReadDct(db, dctPriceCategoryTrack)
-        ReadDct(db, dctLanguages) 'есть два списка
-
-
+        ReadDct(db, IdAudioReleaseType, "dctAudioReleaseType")
+        ReadDct(db, IdAudioReleaseGenres, "dctAudioReleaseGenres")
+        ReadDct(db, IdAudioReleaseStyle, "dctAudioReleaseStyle")
+        ReadDct(db, IdAudioReleaseView, "dctAudioReleaseView")
+        ReadDct(db, IdAudioReleaseFormat, "dctAudioReleaseFormat")
+        ReadDct(db, IdShowCase, "dctShowCase")
+        ReadDct(db, IdMinPriceItunes, "dctMinPriceItunes")
+        ReadDct(db, IdPriceCategoryAlbumItunes, "dctPriceCategoryAlbumItunes")
+        ReadDct(db, IdPriceCategoryTrack, "dctPriceCategoryTrack")
+        ReadDct(db, IdAudioReleaseLanguage, "dctLanguages")
+        ReadDct(db, IdAudioReleaseMetaLanguage, "dctLanguages")
 
     End Sub
 

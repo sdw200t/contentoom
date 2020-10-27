@@ -14,74 +14,101 @@ Option Explicit On
 Partial Public Class AudioReleaseMain
 
     '''<summary>
-    '''dctAudioReleaseType элемент управления.
+    '''IdAudioReleaseType элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents dctAudioReleaseType As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents IdAudioReleaseType As Global.System.Web.UI.HtmlControls.HtmlSelect
 
     '''<summary>
-    '''dctAudioReleaseGenres элемент управления.
+    '''IdAudioReleaseGenres элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents dctAudioReleaseGenres As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents IdAudioReleaseGenres As Global.System.Web.UI.HtmlControls.HtmlSelect
 
     '''<summary>
-    '''dctAudioReleaseStyle элемент управления.
+    '''IdAudioReleaseStyle элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents dctAudioReleaseStyle As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents IdAudioReleaseStyle As Global.System.Web.UI.HtmlControls.HtmlSelect
 
     '''<summary>
-    '''dctAudioReleaseFormat элемент управления.
+    '''IdAudioReleaseView элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents dctAudioReleaseFormat As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents IdAudioReleaseView As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''dctPriceCategoryAlbumItunes элемент управления.
+    '''IdAudioReleaseFormat элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents dctPriceCategoryAlbumItunes As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents IdAudioReleaseFormat As Global.System.Web.UI.HtmlControls.HtmlSelect
 
     '''<summary>
-    '''dctPriceCategoryTrack элемент управления.
+    '''IdShowCase элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents dctPriceCategoryTrack As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents IdShowCase As Global.System.Web.UI.WebControls.CheckBoxList
 
     '''<summary>
-    '''dctMinPriceItunes элемент управления.
+    '''IdPriceCategoryAlbumItunes элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents dctMinPriceItunes As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents IdPriceCategoryAlbumItunes As Global.System.Web.UI.HtmlControls.HtmlSelect
 
     '''<summary>
-    '''dctLanguages элемент управления.
+    '''IdPriceCategoryTrack элемент управления.
     '''</summary>
     '''<remarks>
     '''Автоматически создаваемое поле.
     '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
     '''</remarks>
-    Protected WithEvents dctLanguages As Global.System.Web.UI.HtmlControls.HtmlSelect
+    Protected WithEvents IdPriceCategoryTrack As Global.System.Web.UI.HtmlControls.HtmlSelect
+
+    '''<summary>
+    '''IdMinPriceItunes элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents IdMinPriceItunes As Global.System.Web.UI.HtmlControls.HtmlSelect
+
+    '''<summary>
+    '''IdAudioReleaseLanguage элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents IdAudioReleaseLanguage As Global.System.Web.UI.HtmlControls.HtmlSelect
+
+    '''<summary>
+    '''IdAudioReleaseMetaLanguage элемент управления.
+    '''</summary>
+    '''<remarks>
+    '''Автоматически создаваемое поле.
+    '''Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+    '''</remarks>
+    Protected WithEvents IdAudioReleaseMetaLanguage As Global.System.Web.UI.HtmlControls.HtmlSelect
 End Class

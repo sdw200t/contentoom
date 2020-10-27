@@ -123,7 +123,7 @@
                     <div class="elem_name botmarg37">
                         Статус:
 												<input type="hidden" name="PROPERTY[94][0][VALUE]" value="status_01_correction">
-                        <input class="input_disabled W450" type="text" value="На исправлении" disabled="" title="Не редактируется">
+                        <input class="input_disabled W450" type="text" value="На исправлении" disabled="" title="Не редактируется" id="IdAudioReleaseStatus">
                     </div>
 
                     <!--Тип-->
@@ -131,7 +131,7 @@
                         Тип				
                     </div>
                     <div class="botmarg37">
-                        <select id="dctAudioReleaseType" name="PROPERTY[1][0][VALUE]" runat="server">
+                        <select id="IdAudioReleaseType" name="PROPERTY[1][0][VALUE]" runat="server">
                             <option value="">(не выбрано)</option>
                             <option value="jazz">Джаз </option>
                             <option value="classic">Классическая </option>
@@ -385,7 +385,7 @@
                 Жанр           
             </div>
             <div class="botmarg37">
-                <select id="dctAudioReleaseGenres" name="PROPERTY[8][0][VALUE]" runat="server">
+                <select id="IdAudioReleaseGenres" name="PROPERTY[8][0][VALUE]" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="43">Alternative </option>
                     <option value="160">Anime </option>
@@ -441,7 +441,7 @@
             </div>
             <div class="botmarg37">
                 <div id="refreshStyle">
-                    <select id="dctAudioReleaseStyle" name="PROPERTY[9][0][VALUE]" runat="server">
+                    <select id="IdAudioReleaseStyle" name="PROPERTY[9][0][VALUE]" runat="server">
                         <option value="">(не выбрано)</option>
 
 
@@ -544,20 +544,12 @@
             </div>
             <div class="botmarg37 flexim">
                 <div>
-                    <div class="checkbox_area">
-                        <input type="radio" name="PROPERTY[11][0]" id="view_0" class="checkbox_flag W25 Y25" value="view_release" checked="">
-                        <label for="view_0" class="checkbox_name W400 Y45">
-                            <p>Аудио релиз</p>
-                        </label>
-                        <br>
-                    </div>
-                    <div class="checkbox_area">
-                        <input type="radio" name="PROPERTY[11][0]" id="view_1" class="checkbox_flag W25 Y25" value="view_collection">
-                        <label for="view_1" class="checkbox_name W400 Y45">
-                            <p>Сборник</p>
-                        </label>
-                        <br>
-                    </div>
+                    <form runat="server">
+                        <asp:RadioButtonList ID="IdAudioReleaseView" runat="server">
+                            <asp:ListItem>1</asp:ListItem>
+                            <asp:ListItem>2</asp:ListItem>
+                        </asp:RadioButtonList>
+                    </form>
                 </div>
                 <span class="tooltip tooltipstered">
                     <div class="counter_but">?</div>
@@ -570,7 +562,7 @@
                 Формат аудио релиза           
             </div>
             <div class="botmarg37 flexim">
-                <select id="dctAudioReleaseFormat" name="PROPERTY[13][0][VALUE]" runat="server">
+                <select id="IdAudioReleaseFormat" name="PROPERTY[13][0][VALUE]" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="format_single">Single </option>
                     <option value="format_ep">EP </option>
@@ -620,240 +612,9 @@
                 </span>
             </div>
             <div class="checkbox_list botmarg37" id="AllShowcase">
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][0][VALUE]" id="showcase_0" class="checkbox_flag W25 Y25 checkShowcase" value="1" checked="">
-                    <label for="showcase_0" class="checkbox_name W400 Y45">
-                        <p>Google</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][1][VALUE]" id="showcase_1" class="checkbox_flag W25 Y25 checkShowcase" value="6" checked="">
-                    <label for="showcase_1" class="checkbox_name W400 Y45">
-                        <p>Spotify</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][2][VALUE]" id="showcase_2" class="checkbox_flag W25 Y25 checkShowcase" value="11" checked="">
-                    <label for="showcase_2" class="checkbox_name W400 Y45">
-                        <p>Deezer</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][3][VALUE]" id="showcase_3" class="checkbox_flag W25 Y25 checkShowcase" value="12" checked="">
-                    <label for="showcase_3" class="checkbox_name W400 Y45">
-                        <p>7digital</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][4][VALUE]" id="showcase_4" class="checkbox_flag W25 Y25 checkShowcase" value="19" checked="">
-                    <label for="showcase_4" class="checkbox_name W400 Y45">
-                        <p>Shazam</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][5][VALUE]" id="showcase_5" class="checkbox_flag W25 Y25 checkShowcase" value="20" checked="">
-                    <label for="showcase_5" class="checkbox_name W400 Y45">
-                        <p>iTunes</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][6][VALUE]" id="showcase_6" class="checkbox_flag W25 Y25 checkShowcase" value="22" checked="">
-                    <label for="showcase_6" class="checkbox_name W400 Y45">
-                        <p>Yandex Music</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][7][VALUE]" id="showcase_7" class="checkbox_flag W25 Y25 checkShowcase" value="27" checked="">
-                    <label for="showcase_7" class="checkbox_name W400 Y45">
-                        <p>Zvooq</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][8][VALUE]" id="showcase_8" class="checkbox_flag W25 Y25 checkShowcase" value="37" checked="">
-                    <label for="showcase_8" class="checkbox_name W400 Y45">
-                        <p>Amazon</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][9][VALUE]" id="showcase_9" class="checkbox_flag W25 Y25 checkShowcase" value="38" checked="">
-                    <label for="showcase_9" class="checkbox_name W400 Y45">
-                        <p>Juke</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][10][VALUE]" id="showcase_10" class="checkbox_flag W25 Y25 checkShowcase" value="39" checked="">
-                    <label for="showcase_10" class="checkbox_name W400 Y45">
-                        <p>TIDAL</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][11][VALUE]" id="showcase_11" class="checkbox_flag W25 Y25 checkShowcase" value="71" checked="">
-                    <label for="showcase_11" class="checkbox_name W400 Y45">
-                        <p>SoundExchange</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][12][VALUE]" id="showcase_12" class="checkbox_flag W25 Y25 checkShowcase" value="72" checked="">
-                    <label for="showcase_12" class="checkbox_name W400 Y45">
-                        <p>BK</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][13][VALUE]" id="showcase_13" class="checkbox_flag W25 Y25 checkShowcase" value="90" checked="">
-                    <label for="showcase_13" class="checkbox_name W400 Y45">
-                        <p>YoutubeClaime</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][14][VALUE]" id="showcase_14" class="checkbox_flag W25 Y25 checkShowcase" value="99" checked="">
-                    <label for="showcase_14" class="checkbox_name W400 Y45">
-                        <p>Zaycev_Net</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][15][VALUE]" id="showcase_15" class="checkbox_flag W25 Y25 checkShowcase" value="100" checked="">
-                    <label for="showcase_15" class="checkbox_name W400 Y45">
-                        <p>Boomplay</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][16][VALUE]" id="showcase_16" class="checkbox_flag W25 Y25 checkShowcase" value="103" checked="">
-                    <label for="showcase_16" class="checkbox_name W400 Y45">
-                        <p>Smule</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][17][VALUE]" id="showcase_17" class="checkbox_flag W25 Y25 checkShowcase" value="106" checked="">
-                    <label for="showcase_17" class="checkbox_name W400 Y45">
-                        <p>iMusica</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][18][VALUE]" id="showcase_18" class="checkbox_flag W25 Y25 checkShowcase" value="111" checked="">
-                    <label for="showcase_18" class="checkbox_name W400 Y45">
-                        <p>I-ONE</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][19][VALUE]" id="showcase_19" class="checkbox_flag W25 Y25 checkShowcase" value="120" checked="">
-                    <label for="showcase_19" class="checkbox_name W400 Y45">
-                        <p>LINE</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][20][VALUE]" id="showcase_20" class="checkbox_flag W25 Y25 checkShowcase" value="121" checked="">
-                    <label for="showcase_20" class="checkbox_name W400 Y45">
-                        <p>BIBLIO</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][21][VALUE]" id="showcase_21" class="checkbox_flag W25 Y25 checkShowcase" value="122" checked="">
-                    <label for="showcase_21" class="checkbox_name W400 Y45">
-                        <p>KDigitalMedia</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][22][VALUE]" id="showcase_22" class="checkbox_flag W25 Y25 checkShowcase" value="123" checked="">
-                    <label for="showcase_22" class="checkbox_name W400 Y45">
-                        <p>Lyrics Find</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][23][VALUE]" id="showcase_23" class="checkbox_flag W25 Y25 checkShowcase" value="133" checked="">
-                    <label for="showcase_23" class="checkbox_name W400 Y45">
-                        <p>SoundCloud</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][24][VALUE]" id="showcase_24" class="checkbox_flag W25 Y25 checkShowcase" value="135" checked="">
-                    <label for="showcase_24" class="checkbox_name W400 Y45">
-                        <p>PrimePhonic</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][25][VALUE]" id="showcase_25" class="checkbox_flag W25 Y25 checkShowcase" value="136" checked="">
-                    <label for="showcase_25" class="checkbox_name W400 Y45">
-                        <p>AnghamiVideo</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][26][VALUE]" id="showcase_26" class="checkbox_flag W25 Y25 checkShowcase" value="137" checked="">
-                    <label for="showcase_26" class="checkbox_name W400 Y45">
-                        <p>HIGHRESAUDIO</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][27][VALUE]" id="showcase_27" class="checkbox_flag W25 Y25 checkShowcase" value="138" checked="">
-                    <label for="showcase_27" class="checkbox_name W400 Y45">
-                        <p>MusixMatch</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][28][VALUE]" id="showcase_28" class="checkbox_flag W25 Y25 checkShowcase" value="139" checked="">
-                    <label for="showcase_28" class="checkbox_name W400 Y45">
-                        <p>Idagio</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][29][VALUE]" id="showcase_29" class="checkbox_flag W25 Y25 checkShowcase" value="140" checked="">
-                    <label for="showcase_29" class="checkbox_name W400 Y45">
-                        <p>MonkingMe</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][30][VALUE]" id="showcase_30" class="checkbox_flag W25 Y25 checkShowcase" value="144" checked="">
-                    <label for="showcase_30" class="checkbox_name W400 Y45">
-                        <p>BOOKMATE</p>
-                    </label>
-                    <br>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="PROPERTY[30][31][VALUE]" id="showcase_31" class="checkbox_flag W25 Y25 checkShowcase" value="147" checked="">
-                    <label for="showcase_31" class="checkbox_name W400 Y45">
-                        <p>Facebook</p>
-                    </label>
-                    <br>
-                </div>
-                <script>
-                    //$(document).ready(function () {
-                    //    $("#CheckAllShowcase").click(function () {
-                    //        if (!$("#CheckAllShowcase").is(":checked"))
-                    //            $(".checkShowcase").removeAttr("checked");
-                    //        else
-                    //            $(".checkShowcase").attr("checked", "checked");
-                    //    });
-                    //});
-                </script>
+                <form runat="server">
+                    <asp:CheckBoxList ID="IdShowCase" runat="server"></asp:CheckBoxList>
+                </form>
             </div>
 
 
@@ -862,7 +623,7 @@
                 Дата первой публикации           
             </div>
             <div class="botmarg37 flexim">
-                <input type="text" name="PROPERTY[10][0][VALUE]" class="input_text W400 mask-date" value="13.08.2020">
+                <input type="text" name="PROPERTY[10][0][VALUE]" class="input_text W400 mask-date" value="13.08.2020" id="DateFirstPublication">
                 <img src="/img/ico/calendar.gif" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'PROPERTY[10][0][VALUE]', form: 'iblock_add', bTime: false, currentTime: '1590840617', bHideTime: true});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
                 <span class="tooltip tooltipstered">
                     <div class="counter_but">?</div>
@@ -1005,7 +766,7 @@
                 Дата старта продаж           
             </div>
             <div class="botmarg37 flexim">
-                <input type="text" name="PROPERTY[17][0][VALUE]" class="input_text W400 mask-date" id="PROPERTY_17_0" value="15.09.2020">
+                <input type="text" name="PROPERTY[17][0][VALUE]" class="input_text W400 mask-date" id="DateCurrentPublication" value="15.09.2020">
                 <img src="/img/ico/calendar.gif" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'PROPERTY[17][0][VALUE]', form: 'iblock_add', bTime: false, currentTime: '1590840617', bHideTime: true});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
                 <span class="tooltip tooltipstered">
                     <div class="counter_but">?</div>
@@ -1040,7 +801,7 @@
                 Дата предварительного заказа           
             </div>
             <div class="botmarg37 flexim">
-                <input type="text" name="PROPERTY[18][0][VALUE]" class="input_text W400 mask-date" id="PROPERTY_18_0" value="15.09.2020">
+                <input type="text" name="PROPERTY[18][0][VALUE]" class="input_text W400 mask-date" id="DatePreOrder" value="15.09.2020">
                 <img src="/img/ico/calendar.gif" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'PROPERTY[18][0][VALUE]', form: 'iblock_add', bTime: false, currentTime: '1590840617', bHideTime: true});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
                 <span class="tooltip tooltipstered">
                     <div class="counter_but">?</div>
@@ -1113,7 +874,7 @@
                 Доступен в Apple Music           
             </div>
             <div class="botmarg37">
-                <select name="PROPERTY[40][0][VALUE]">
+                <select name="PROPERTY[40][0][VALUE]" id="AvailableAppleMusic">
                     <option value="" id="genre">(не выбрано)</option>
                     <option value="monetize" selected="selected">монетизировать </option>
                 </select>
@@ -1124,7 +885,7 @@
                 Дата эксклюзивного старта в Apple Music           
             </div>
             <div class="botmarg37 flexim">
-                <input type="text" name="PROPERTY[41][0][VALUE]" class="input_text W400 mask-date" id="PROPERTY_41_0" value="15.09.2020">
+                <input type="text" name="PROPERTY[41][0][VALUE]" class="input_text W400 mask-date" id="DateExStartAppleMusic" value="15.09.2020">
                 <img src="/img/ico/calendar.gif" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'PROPERTY[41][0][VALUE]', form: 'iblock_add', bTime: false, currentTime: '1590840617', bHideTime: true});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
             </div>
             <script>
@@ -1149,7 +910,7 @@
                 Ценовая категория альбома ITUNES           
             </div>
             <div class="botmarg37 flexim">
-                <select id="dctPriceCategoryAlbumItunes" name="PROPERTY[42][0][VALUE]" runat="server">
+                <select id="IdPriceCategoryAlbumItunes" name="PROPERTY[42][0][VALUE]" runat="server">
                     <option value="" >(не выбрано)</option>
                     <option value="1">Digital 45 : 1.49€ </option>
                     <option value="2">Mini EP : 1.99€ </option>
@@ -1165,7 +926,7 @@
                 Ценовая категория трека ITUNES           
             </div>
             <div class="botmarg37 flexim">
-                <select id="dctPriceCategoryTrack" name="PROPERTY[43][0][VALUE]" runat="server">
+                <select id="IdPriceCategoryTrack" name="PROPERTY[43][0][VALUE]" runat="server">
                     <option value="" >(не выбрано)</option>
                     <option value="1">Back : 10руб / 0.69$ / 0.69€ </option>
                     <option value="2">Mid : 15руб / 0.99$ / 0.99€ </option>
@@ -1195,7 +956,7 @@
                 Минимальная ценовая категория трека iTunes           
             </div>
             <div class="botmarg37">
-                <select id="dctMinPriceItunes" name="PROPERTY[45][0][VALUE]" runat="server">
+                <select id="IdMinPriceItunes" name="PROPERTY[45][0][VALUE]" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="low" selected="selected">Low </option>
                     <option value="lowest">Lowest </option>
@@ -1207,7 +968,7 @@
                 UPC код аудио релиза           
             </div>
             <div class="botmarg37 flexim">
-                <input type="text" name="PROPERTY[20][0][VALUE]" class="input_text W450" value="3616407404005">
+                <input type="text" name="PROPERTY[20][0][VALUE]" class="input_text W450" value="3616407404005" id="UPC">
                 <span class="tooltip tooltipstered">
                     <div class="counter_but">?</div>
                 </span>
@@ -1218,7 +979,7 @@
                 Каталожный номер аудио релиза (пользовательский)           
             </div>
             <div class="botmarg37 flexim">
-                <input type="text" name="PROPERTY[22][0][VALUE]" class="input_text W450" value="">
+                <input type="text" name="PROPERTY[22][0][VALUE]" class="input_text W450" value="" id="CatalogNumberUser">
                 <span class="tooltip tooltipstered">
                     <div class="counter_but">?</div>
                 </span>
@@ -1229,7 +990,7 @@
                 Язык аудио релиза           
             </div>
             <div class="botmarg37 flexim">
-                <select id="dctLanguages" name="PROPERTY[19][0][VALUE]" runat="server">
+                <select id="IdAudioReleaseLanguage" name="PROPERTY[19][0][VALUE]" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="ru" selected="selected">Russian </option>
                     <option value="en">English </option>
@@ -1341,7 +1102,7 @@
                 Язык метаданных релиза           
             </div>
             <div class="botmarg37 flexim">
-                <select name="PROPERTY[164][0][VALUE]">
+                <select name="PROPERTY[164][0][VALUE]" id="IdAudioReleaseMetaLanguage" runat="server">
                     <option value="">(не выбрано)</option>
                     <option value="ru" selected="selected">Russian </option>
                     <option value="en">English </option>
